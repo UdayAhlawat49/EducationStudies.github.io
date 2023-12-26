@@ -1,0 +1,54 @@
+$color_1: #fff;
+$color_2: #eee;
+
+.cta {
+	padding-top: 62px;
+	background: #F8F8F8;
+	background-position: 50% -212.914px;
+	.cta-inner {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		position: relative;
+		padding: 90px 0;
+	}
+	.text-content {
+		background: transparent;
+		z-index: 333;
+		position: relative;
+		border-radius: 5px;
+		h2 {
+			font-size: 35px;
+			margin-bottom: 20px;
+			color: $color_1;
+			span {
+				font-weight: 900;
+ 				border-bottom: 2px solid;
+				color: blue;
+			}
+		}
+		p {
+			color: $color_2;
+		}
+	}
+	.button {
+		margin-top: 20px;
+		.white {
+			margin-right: 15px;
+			background-color: white;
+			color: black;
+			padding: 10px 20px;
+			border-radius: 0;
+			&:last-child 
+		 
+{
+				margin: 0;
+			}
+		}
+	}
+	.cta-image {
+		position: absolute;
+		right: 0;
+		top: -152px;
+	}
+}

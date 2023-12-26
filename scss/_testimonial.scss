@@ -1,0 +1,37 @@
+.testimonial{
+    .item{
+        min-height: 300px;
+        background: red;
+        .innerTes{
+            height: 100%;
+            background: green;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding: 20px;
+             .testimonial-text {
+                padding: 20px;
+                color: white;
+                font-weight: 300;
+                line-height: 22px;
+                max-height: 200px;
+                overflow: auto;
+            }
+        }
+        }
+}
+.testimonial-author {
+    display: flex;
+    width: 57px;
+    /* border-radius: 50px; */
+    /* background: yellow; */
+    margin: 10px 42px;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    img{
+        object-fit: cover;
+    }
+}
+ 
