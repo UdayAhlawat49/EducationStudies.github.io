@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap v 5.2 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <!-- owl Crousel -->
+    <link rel="stylesheet" href="./css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/owl/owl.theme.green.min.css" />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+
+    <!-- select -->
+    <link rel="stylesheet" href="./css/vselect.min.css" />
+    <title>Education Studeis</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <section>
+      <header>
+        <!-- top bar -->
+        <div class="topBar">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li>
+                    <i class="bi bi-envelope"></i>
+                    <span> contact@educationstudies.com </span>
+                  </li>
+                  <li>
+                    <i class="bi bi-telephone"></i> <span>8449511111</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="socialIcons">
+                  <li>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- logo -->
+        <div class="container-fluid">
+          <!-- Navigation -->
+          <div class="row navigation p-2 px-5">
+            <div class="col-7">
+              <div class="logo">
+                <img
+                  width="60"
+                  src="./assets/images/LOGO.png"
+                  alt="Educaiton Studies"
+                  class="img-fluid"
+                />
+
+                <span class="ms-3">EDUCATION STUDIES</span>
+              </div>
+            </div>
+            <div class="col-5">
+              <!-- social contact-->
+              <div class="socialContact">
+                <ul>
+                  <li>
+                    <span>HOME</span>
+                  </li>
+                  <li>
+                    <span>ABOUT</span>
+                  </li>
+                  <li>
+                    <span>BLOG</span>
+                  </li>
+                  <li>
+                    <span>CONTACT</span>
+                  </li>
+                </ul>
+                <div
+                  class="Appointment"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div class="book_btn d-none d-lg-block">
+                    <a data-scroll-nav="1" href="#">Apply NOw</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- mobile menu -->
+              <div class="mobileMenu">
+                <!-- hero section -->
+
+                <div
+                  data-bs-toggle="offcanvas"
+                  href="#offcanvasExample"
+                  role="button"
+                  aria-controls="offcanvasExample"
+                >
+                  <!-- hamburgur icons -->
+                  <div class="menuIcon d-blcok d-md-none">
+                    <div class="hamBurger">
+                      <i class="bi bi-list"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+         Button with data-bs-target
+       </button>
+        -->
+                <div
+                  class="offcanvas offcanvas-start"
+                  tabindex="-1"
+                  id="offcanvasExample"
+                  aria-labelledby="offcanvasExampleLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                      Offcanvas
+                    </h5>
+                    <div
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></div>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div
+                      class="accordion accordion-flush"
+                      id="accordionFlushExample"
+                    >
+                      <!-- Accordion Item #1 -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <div
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne"
+                            aria-expanded="false"
+                            aria-controls="flush-collapseOne"
+                          >
+                            Accordion Item #1
+                          </div>
+                        </h2>
+                        <div
+                          id="flush-collapseOne"
+                          class="accordion-collapse collapse"
+                          aria-labelledby="flush-headingOne"
+                          data-bs-parent="#accordionFlushExample"
+                        >
+                          <div class="accordion-body">
+                            <!-- Nested Accordion Level 1 -->
+                            <div
+                              class="accordion accordion-flush"
+                              id="nestedAccordionLevel1"
+                            >
+                              <!-- Nested Accordion Level 1, Item #1 -->
+                              <div class="accordion-item">
+                                <h2
+                                  class="accordion-header"
+                                  id="nested-headingOneLevel1"
+                                >
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#nested-collapseOneLevel1"
+                                    aria-expanded="false"
+                                    aria-controls="nested-collapseOneLevel1"
+                                  >
+                                    Nested Accordion Level 1, Item #1
+                                  </button>
+                                </h2>
+                                <div
+                                  id="nested-collapseOneLevel1"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="nested-headingOneLevel1"
+                                  data-bs-parent="#nestedAccordionLevel1"
+                                >
+                                  <div class="accordion-body">
+                                    <!-- Content for Nested Accordion Level 1, Item #1 -->
+                                    Content for Nested Accordion Level 1, Item
+                                    #1
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Nested Accordion Level 1, Item #2 -->
+                              <div class="accordion-item">
+                                <h2
+                                  class="accordion-header"
+                                  id="nested-headingTwoLevel1"
+                                >
+                                  <button
+                                    class="accordion-button collapsed"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#nested-collapseTwoLevel1"
+                                    aria-expanded="false"
+                                    aria-controls="nested-collapseTwoLevel1"
+                                  >
+                                    Nested Accordion Level 1, Item #2
+                                  </button>
+                                </h2>
+                                <div
+                                  id="nested-collapseTwoLevel1"
+                                  class="accordion-collapse collapse"
+                                  aria-labelledby="nested-headingTwoLevel1"
+                                  data-bs-parent="#nestedAccordionLevel1"
+                                >
+                                  <div class="accordion-body">
+                                    <!-- Content for Nested Accordion Level 1, Item #2 -->
+                                    Content for Nested Accordion Level 1, Item
+                                    #2
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End of Nested Accordion Level 1 -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Accordion Item #1 -->
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col mx-md-5">
+                      <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                          <label for="subMenu_1_check" href="#">Home +</label>
+
+                          <input id="subMenu_1_check" type="checkbox" />
+                          <ul class="subMenu_1">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li>
+                              <label for="subMenu_2_check" href="#"
+                                >Home +</label
+                              >
+                              <input id="subMenu_2_check" type="checkbox" />
+                              <ul class="subMenu_2">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li>
+                                  <a href="#">Home +</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="heroSection">
+          <!-- desktop menu -->
+          <div class="row">
+            <div class="col">
+              <div id="stickyMenu" class="menu">
+                <ul>
+                  <li>
+                    <a href="#"
+                      >Courses <i class="bi bi-caret-down-fill"></i
+                    ></a>
+                    <ul>
+                      <li><a href="#">Engineering</a></li>
+                      <li><a href="#">Management</a></li>
+                      <li><a href="#">Medical</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Colleges <i class="bi bi-caret-down-fill"></i
+                    ></a>
+                    <ul>
+                      <li>
+                        <a href="#"
+                          >Engineering <i class="bi bi-caret-right-fill"></i
+                        ></a>
+                        <ul>
+                          <li><a href="#">Top Ranked</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">Management</a></li>
+                      <li><a href="#">Medical</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Study Abroad</a>
+                    <ul>
+                      <li><a href="#">Countries</a></li>
+                      <li><a href="#">Offering</a></li>
+                      <li><a href="#">Exam</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Counseling</a></li>
+                  <li><a href="#">Exam</a></li>
+                  <li><a href="#">Updates</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="collgeHeading">
+            <div class="collegeMainHead">
+              <h2>Best Engineering Colleges in India for B.Tech Education</h2>
+              <div class="subheading">
+                Compilation of 80 Top B.Tech Colleges in India
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <section>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="middleContent">
+                    <p>
+                      Being one of the most in demand courses in India, the engineering
+                      colleges in India are plenty. These colleges offer admission in
+                      various areas of engineering namely civil engineering, aeronautical
+                      engineering, mechanical engineering, electrical engineering etc. As it
+                      is one of the most sought after career options in India, the demand
+                      for individuals skilled in engineering is at an all time high with big
+                      shot multinational companies looking to hire technically adept
+                      employees. While there are almost 4200 B.Tech colleges in India, it is
+                      difficult to decide the best. Some of the popular states in India such
+                      as Tamil Nadu, Maharashtra, Andhra, Karnataka, Telangana, Uttar
+                      Pradesh, Delhi and Madhya Pradesh have a maximum number of engineering
+                      colleges (300+ in each state). <a href="#">Read More</a>
+                    </p>
+                  </div>
+            </div>
+         </div>
+
+         <div class="row my-5">
+            <h2 class="ms-3 ">Best Engineering Colleges in Decemeber ( 2023 )</h2>
+            <div class="col-md-9 ">
+                <div class="row my-5">
+
+               
+                <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+
+               
+                <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-5">
+
+               
+                <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   <div class="col-md-4">
+                    <div class="collegeView">
+                        <div class="collegeImage">
+                              <img class="img-fluid" src="./assets/images/14118_ludiyana_onew.webp" alt="">      
+                        </div>
+                        <div class="collegeData">
+                            <div class="collegeLogo">
+                                <img width="40" src="./assets/images/lokpok_.webp" alt="logo">
+                                <h2>Ludhiana Group Of Colleges</h2>
+                            </div>
+                            <hr>
+                            <div class="collegeText">
+                              
+                                <div class="rating">
+                                    <ul>
+                                        <li>  <span>4.6</span></li>
+                                        <li>     <div class="star">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div></li>
+                                        <li>  <span>
+                                           ( 445)
+                                        </span></li>
+                                     
+                                    </ul>
+                             
+                                </div>
+                                <ul class="CollegebottomContent">
+                                    <li><span>Fees - 45 Lakh</span></li>
+                                    <li><span>Salary - 66 Lakh</span></li>
+                               
+                                </ul>
+                               <ul>
+                                <li><span>Approved by : AICTE</span></li>
+                                <li><span>Type : Private</span></li>
+                               </ul>
+                            </div>
+                            <div class="collegeRead">
+    
+                                <span>Apply</span>
+                                <p>Learn More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+               <!-- pagination -->
+               <div class="row">
+               <div class="col mx-auto">
+                <div class="paginationCollege">
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
+                </div>
+               </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+                <div class="blog_right_sidebar">
+                    <aside class="single_sidebar_widget search_widget">
+                        <form action="#">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder='Search Keyword'
+                                        onfocus="this.placeholder = ''"
+                                        onblur="this.placeholder = 'Search Keyword'">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="button"><i class="ti-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                type="submit">Search</button>
+                        </form>
+                    </aside>
+
+                    <aside class="single_sidebar_widget post_category_widget">
+                        <h4 class="widget_title">Category</h4>
+                        <ul class="list cat-list">
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Engineering</p>
+                                    <p>(37)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Managment</p>
+                                    <p>(10)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Medical</p>
+                                    <p>(03)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>IT</p>
+                                    <p>(11)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Commerce</p>
+                                    <p>21</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Art (21)</p>
+                                    <p>09</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <aside class="single_sidebar_widget popular_post_widget">
+                        <h3 class="widget_title">Popural Colleges</h3>
+                        <div class="media post_item">
+                            <img width="40" src="./assets/images/lokpok_.webp" alt="post">
+                            <div class="media-body">
+                                <a href="single-blog.html">
+                                    <h3>Ludhiana Group Of Colleges</h3>
+                                </a>
+                                <p>January 12, 2019</p>
+                            </div>
+                        </div>
+                        <div class="media post_item">
+                            <img width="40" src="./assets/images/lokpok_.webp" alt="post">
+                            <div class="media-body">
+                                <a href="single-blog.html">
+                                    <h3>Ludhiana Group Of Colleges</h3>
+                                </a>
+                                <p>January 12, 2019</p>
+                            </div>
+                        </div>
+                        <div class="media post_item">
+                            <img width="40" src="./assets/images/lokpok_.webp" alt="post">
+                            <div class="media-body">
+                                <a href="single-blog.html">
+                                    <h3>Ludhiana Group Of Colleges</h3>
+                                </a>
+                                <p>January 12, 2019</p>
+                            </div>
+                        </div>
+                    
+                    </aside>
+                    <aside class="single_sidebar_widget tag_cloud_widget">
+                        <h4 class="widget_title">Courses</h4>
+                        <ul class="list">
+                            <li>
+                                <a href="#">B.tech</a>
+                            </li>
+                            <li>
+                                <a href="#">MBA</a>
+                            </li>
+                            <li>
+                                <a href="#">MBBS</a>
+                            </li>
+                            <li>
+                                <a href="#">BSC</a>
+                            </li>
+                            <li>
+                                <a href="#">BCA</a>
+                            </li>
+                            <li>
+                                <a href="#">B.Com</a>
+                            </li>
+                            <li>
+                                <a href="#">MSC</a>
+                            </li>
+                            <li>
+                                <a href="#">BBA</a>
+                            </li>
+                        </ul>
+                    </aside>
+
+
+                    <aside class="single_sidebar_widget instagram_feeds">
+                        <h4 class="widget_title">Featured Colleges</h4>
+                        <ul class="instagram_row flex-wrap">
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/lokpok_.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/lokpok_.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/lokpok_.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/lokpok_.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/lokpok_.webp" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="./assets/images/lokpok_.webp" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+
+
+                    <aside class="single_sidebar_widget newsletter_widget">
+                        <h4 class="widget_title">Newsletter</h4>
+
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                            </div>
+                            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                type="submit">Subscribe</button>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+
+
+         
+         </div>
+        
+    </div>
+    </section>
+    <!-- header end -->
+    <!-- registration modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <!-- latest_coures_area_start  -->
+            <div class="admission_area">
+              <div class="admission_inner">
+                <div class="container">
+                  <div class="row justify-content-end">
+                    <div class="col-lg-12">
+                      <div class="admission_form">
+                        <h3>Apply for Admission</h3>
+                        <form action="#">
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="single_input">
+                                <input type="text" placeholder="First Name" />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="single_input">
+                                <input type="text" placeholder="Last Name" />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="single_input">
+                                <input type="text" placeholder="Phone Number" />
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="single_input">
+                                <input
+                                  type="text"
+                                  placeholder="Email Address"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="single_input">
+                                <textarea
+                                  cols="30"
+                                  placeholder="Write an Application"
+                                  rows="10"
+                                ></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mx-auto text-center">
+                              <div class="apply_btn">
+                                <button class="boxed-btn3" type="submit">
+                                  Apply Now
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-lg-12 mt-3 mx-auto w-100">
+                      <div class="terms text-center">
+                        <p>
+                          By submitting this form, you accept and agree to our ,
+                          <a href="@">Term and Conditions</a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--/ latest_coures_area_end -->
+          </div>
+          <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- regsitration form  -->
+
+    <!-- regustration form end  -->
+
+    <!-- footer Section Start -->
+    <footer class="footer">
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-md-6 col-lg-3">
+              <div class="footer_widget">
+                <!-- <h3 class="footer_title">Stay Updated</h3> -->
+                <div class="logo">
+                  <img src="./assets/images/LOGO.png" width="70" alt="logo" />
+                  <h2>Education Studies</h2>
+                </div>
+                <p>
+                  <i class="bi bi-geo-alt-fill"></i>
+                  Paradise mall, 5, Baghpat Rd Sabun Godam, <br />
+                  Jwala Nagar,Naval Vihar, Meerut, Uttar Pradesh <br />
+                  250002
+                </p>
+              </div>
+              <div class="footer_widget mt-2">
+                <ul>
+                  <li>
+                    <i class="bi bi-telephone"></i>&nbsp; &nbsp;<a href="#"
+                      >+91 8449511111</a
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-envelope"></i>&nbsp;&nbsp; &nbsp;<a href="#"
+                      >educationstudies@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 col-lg-3 pt-5">
+              <div class="footer_widget">
+                <h3 class="footer_title">Study</h3>
+                <ul>
+                  <li><a href="#">Admissions Policy</a></li>
+                  <li><a href="#">Getting Started</a></li>
+                  <li><a href="#">Visa Information</a></li>
+                  <li><a href="#">Tuition Calculator</a></li>
+                  <li><a href="#">Request Information</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-lg-3 pt-5">
+              <div class="footer_widget">
+                <h3 class="footer_title">Support</h3>
+                <ul>
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">System Requirements</a></li>
+                  <li><a href="#">Register Activation Key</a></li>
+                  <li><a href="#">Site feedback</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy-right_text">
+        <div class="container">
+          <div class="footer_border"></div>
+          <div class="row">
+            <div class="col-xl-12">
+              <div class="copyright">
+                <p class="text-center">
+                  All Rights Reserved &#9400; <a href="">Education Academy</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end  -->
+
+    <!-- scripts -->
+    <!-- jquery -->
+    <script src="./js/vendor/jquery-3.7.1.min.js"></script>
+    <!-- bootstrap v5.2 -->
+    <script src="./js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- owl crousel -->
+    <script src="./js/vendor/owl.carousel.min.js"></script>
+    <!-- isotope -->
+    <script src="./js/vendor/isotope.pkgd.min.js"></script>
+
+    <!-- select -->
+    <script src="./js/vendor/vselect.min.js"></script>
+    <!-- custom js -->
+    <script src="./js/script.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

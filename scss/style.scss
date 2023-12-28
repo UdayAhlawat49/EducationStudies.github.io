@@ -2,17 +2,21 @@
 @import 'responsive.scss';
 
 @import 'mixins.scss';
+@import 'btn';
 @import 'extend';
  
 @import 'section_title';
 
 
+
 @import 'index';
+
 @import 'service';
 @import 'category';
 @import 'program';
 
- 
+// header
+@import 'header'; 
 
 @import 'cta';
 
@@ -22,4 +26,15 @@
 @import '_news';
 @import 'event';
 
+
+@import 'course';
+
+
+// college page
+@import 'collegePage';
+
+// blog page
+@import 'blog';
 @import 'footer';
+
+@import 'vselect';

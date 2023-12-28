@@ -18,6 +18,8 @@
     <!-- custom styles -->
     <link rel="stylesheet" href="./css/style.min.css" />
 
+    <!-- select -->
+    <link rel="stylesheet" href="./css/vselect.min.css">
     <title>Education Studeis</title>
   </head>
   <body>
@@ -88,7 +90,11 @@
                     <span>CONTACT</span>
                   </li>
                 </ul>
-                <button>GET STARTED</button>
+                <div class="Appointment" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="book_btn d-none d-lg-block">
+                      <a data-scroll-nav="1" href="#">Apply NOw</a>
+                  </div>
+              </div>
               </div>
 
               <!-- mobile menu -->
@@ -340,6 +346,84 @@
       </header>
     </section>
 
+
+    <!-- registration modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"> </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+         <!-- latest_coures_area_start  -->
+  <div class="admission_area">
+    <div class="admission_inner">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-12">
+                    <div class="admission_form">
+                        <h3>Apply for Admission</h3>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="single_input">
+                                        <input type="text" placeholder="First Name" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single_input">
+                                        <input type="text" placeholder="Last Name" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single_input">
+                                        <input type="text" placeholder="Phone Number" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="single_input">
+                                        <input type="text" placeholder="Email Address" >
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="single_input">
+                                        <textarea cols="30" placeholder="Write an Application" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mx-auto text-center">
+                                    <div class="apply_btn">
+                                        <button class="boxed-btn3" type="submit">Apply Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-12 mt-3 mx-auto w-100">
+                  <div class="terms text-center">
+                    <p>By submitting this form, you accept and agree to our , <a href="@">Term and Conditions</a></p>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ latest_coures_area_end -->
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+    <!-- regsitration form  -->
+
+
+    <!-- regustration form end  -->
     <!-- Stat Section Start -->
     <!-- service_area_start(College Section header Start)  -->
     <div class="service_area gray_bg">
@@ -762,7 +846,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-lg-8 col-md-10">
-              <div class="section_title text-center  ">
+              <div class="section_title text-center">
                 <h3 class=" ">Our Simple Admission Process</h3>
                 <p>
                   Education Academy simplifies your path to success. We help you
@@ -900,89 +984,89 @@
       <div class="testimonial">
         <div class="owl-carousel owl-theme">
           <div class="item">
-           <div class="innerTes">
-            <div class="rating">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-            </div>
-            <p class="testimonial-text">
-              "Success is not final, failure is not fatal: It is the courage to
-              continue that counts."
-            </p>
-            <div class="testimonial-author">
-            <div class="avatarImg rounded-circle">
-              <img
-              src="img/testmonial/2.png"
-              alt="Testimonial Author"
-              class="testimonial-author-img "
-            />
-            </div>
-              <div class="intro">
-                <span class="testimonial-author-name">Eleanor Roosevelt</span>
-                <span class="testimonial-author-position">Seo WebDev</span>
+            <div class="innerTes">
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "Success is not final, failure is not fatal: It is the courage
+                to continue that counts."
+              </p>
+              <div class="testimonial-author">
+                <div class="avatarImg rounded-circle">
+                  <img
+                    src="img/testmonial/2.png"
+                    alt="Testimonial Author"
+                    class="testimonial-author-img"
+                  />
+                </div>
+                <div class="intro">
+                  <span class="testimonial-author-name">Eleanor Roosevelt</span>
+                  <span class="testimonial-author-position">Seo WebDev</span>
+                </div>
               </div>
             </div>
-           </div>
           </div>
           <div class="item">
             <div class="innerTes">
-             <div class="rating">
-               <i class="bi bi-star-fill"></i>
-               <i class="bi bi-star-fill"></i>
-               <i class="bi bi-star-fill"></i>
-               <i class="bi bi-star-fill"></i>
-               <i class="bi bi-star-fill"></i>
-             </div>
-             <p class="testimonial-text">
-               "Success is not final, failure is not fatal: It is the courage to
-               continue that counts."
-             </p>
-             <div class="testimonial-author">
-             <div class="avatarImg rounded-circle">
-               <img
-               src="img/testmonial/2.png"
-               alt="Testimonial Author"
-               class="testimonial-author-img "
-             />
-             </div>
-               <div class="intro">
-                 <span class="testimonial-author-name">Eleanor Roosevelt</span>
-                 <span class="testimonial-author-position">Seo WebDev</span>
-               </div>
-             </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "Success is not final, failure is not fatal: It is the courage
+                to continue that counts."
+              </p>
+              <div class="testimonial-author">
+                <div class="avatarImg rounded-circle">
+                  <img
+                    src="img/testmonial/2.png"
+                    alt="Testimonial Author"
+                    class="testimonial-author-img"
+                  />
+                </div>
+                <div class="intro">
+                  <span class="testimonial-author-name">Eleanor Roosevelt</span>
+                  <span class="testimonial-author-position">Seo WebDev</span>
+                </div>
+              </div>
             </div>
-           </div>
-           <div class="item">
+          </div>
+          <div class="item">
             <div class="innerTes">
-             <div class="rating">
-               <i class="bi bi-star-fill"></i>
-               <i class="bi bi-star-fill"></i>
-               <i class="bi bi-star-fill"></i>
-               <i class="bi bi-star-fill"></i>
-               <i class="bi bi-star-fill"></i>
-             </div>
-             <p class="testimonial-text">
-               "Success is not final, failure is not fatal: It is the courage to
-               continue that counts."
-             </p>
-             <div class="testimonial-author">
-             <div class="avatarImg rounded-circle">
-               <img
-               src="img/testmonial/2.png"
-               alt="Testimonial Author"
-               class="testimonial-author-img "
-             />
-             </div>
-               <div class="intro">
-                 <span class="testimonial-author-name">Eleanor Roosevelt</span>
-                 <span class="testimonial-author-position">Seo WebDev</span>
-               </div>
-             </div>
+              <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="testimonial-text">
+                "Success is not final, failure is not fatal: It is the courage
+                to continue that counts."
+              </p>
+              <div class="testimonial-author">
+                <div class="avatarImg rounded-circle">
+                  <img
+                    src="img/testmonial/2.png"
+                    alt="Testimonial Author"
+                    class="testimonial-author-img"
+                  />
+                </div>
+                <div class="intro">
+                  <span class="testimonial-author-name">Eleanor Roosevelt</span>
+                  <span class="testimonial-author-position">Seo WebDev</span>
+                </div>
+              </div>
             </div>
-           </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1195,24 +1279,32 @@
               <div class="footer_widget">
                 <!-- <h3 class="footer_title">Stay Updated</h3> -->
                 <div class="logo">
-                  <img src="./assets/images/LOGO.png" width="70" alt="logo">
+                  <img src="./assets/images/LOGO.png" width="70" alt="logo" />
                   <h2>Education Studies</h2>
                 </div>
                 <p>
                   <i class="bi bi-geo-alt-fill"></i>
-                  Paradise mall, 5, Baghpat Rd Sabun Godam, <br>  Jwala Nagar,Naval Vihar,  Meerut, Uttar Pradesh  <br> 250002
+                  Paradise mall, 5, Baghpat Rd Sabun Godam, <br />
+                  Jwala Nagar,Naval Vihar, Meerut, Uttar Pradesh <br />
+                  250002
                 </p>
               </div>
               <div class="footer_widget mt-2">
-             
                 <ul>
-                  <li><i class="bi bi-telephone"></i>&nbsp; &nbsp;<a href="#">+91 8449511111</a></li>
-                  <li><i class="bi bi-envelope"></i>&nbsp;&nbsp; &nbsp;<a href="#">educationstudies@gmail.com</a></li>
-               
+                  <li>
+                    <i class="bi bi-telephone"></i>&nbsp; &nbsp;<a href="#"
+                      >+91 8449511111</a
+                    >
+                  </li>
+                  <li>
+                    <i class="bi bi-envelope"></i>&nbsp;&nbsp; &nbsp;<a href="#"
+                      >educationstudies@gmail.com</a
+                    >
+                  </li>
                 </ul>
               </div>
             </div>
-         
+
             <div class="col-xl-3 col-md-6 col-lg-3 pt-5">
               <div class="footer_widget">
                 <h3 class="footer_title">Study</h3>
@@ -1246,7 +1338,7 @@
           <div class="row">
             <div class="col-xl-12">
               <div class="copyright">
-                <p class="text-center ">
+                <p class="text-center">
                   All Rights Reserved &#9400; <a href="">Education Academy</a>
                 </p>
               </div>
@@ -1257,6 +1349,8 @@
     </footer>
     <!-- footer end  -->
 
+
+    
     <!-- scripts -->
     <!-- jquery -->
     <script src="./js/vendor//jquery-3.7.1.min.js"></script>
@@ -1267,6 +1361,10 @@
     <script src="./js/vendor/owl.carousel.min.js"></script>
     <!-- isotope -->
     <script src="./js/vendor/isotope.pkgd.min.js"></script>
+
+
+    <!-- select -->
+    <script src="./js/vendor/vselect.min.js"></script>
     <!-- custom js -->
     <script src="./js/script.js"></script>
 
