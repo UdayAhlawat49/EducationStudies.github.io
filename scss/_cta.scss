@@ -13,14 +13,15 @@ $color_2: #eee;
 		padding: 90px 0;
 	}
 	.text-content {
-		background: transparent;
+		background: white;
 		z-index: 333;
 		position: relative;
 		border-radius: 5px;
+		padding: 50px;
 		h2 {
 			font-size: 35px;
 			margin-bottom: 20px;
-			color: $color_1;
+			color: black;
 			span {
 				font-weight: 900;
  				border-bottom: 2px solid;
@@ -28,17 +29,22 @@ $color_2: #eee;
 			}
 		}
 		p {
-			color: $color_2;
+			color:rgba(0, 0, 0, 0.582);
+			font-size: 14px;
 		}
 	}
 	.button {
 		margin-top: 20px;
 		.white {
-			margin-right: 15px;
-			background-color: white;
-			color: black;
-			padding: 10px 20px;
-			border-radius: 0;
+		    background: #ebb830;
+    padding: 13px 60px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid rgba(0,0,0,0);
+    color: #000000;
+    border-radius: 4px;
+	font-weight: 600;
+    text-transform: uppercase;
 			&:last-child 
 		 
 {
@@ -49,6 +55,6 @@ $color_2: #eee;
 	.cta-image {
 		position: absolute;
 		right: 0;
-		top: -152px;
+		top: 0;
 	}
 }

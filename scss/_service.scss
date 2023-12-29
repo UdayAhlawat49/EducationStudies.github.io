@@ -1,10 +1,10 @@
 .service_area{
-    padding-top: 85px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     .single_service{
         background: #ebb830;
-         @include border-radius(10px);
-         padding: 27.5px 30px;
+         @include border-radius(0);
+         padding:10px;
          margin-bottom: 30px;
          @media #{$mobile_device} {
             padding: 20px 20px;
