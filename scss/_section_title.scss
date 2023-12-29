@@ -1,18 +1,6 @@
 .section_title {
   height: 100%;
-  h3 {
-    font-size: 40px;
-    font-weight: 700;
-    align-items: CENTER;
-
-  
-    display: FLEX;
-    font-family: $font2;
-    color: $heading-color;
-    @media #{$mobile_device} {
-      font-size: 30px;
-    }
-  }
+ 
   h2 {
     font-size: 34px;
     text-transform: capitalize;

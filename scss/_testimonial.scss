@@ -1,17 +1,14 @@
 .testimonial{
-    padding: 50px;
-    background-color: #F8F9FA;
-    margin: 100px;
-
+     background-color: #F8F9FA;
+ 
     h2{
         text-align: center;
-        font-size: 48px;
-        font-weight: 600;
+     
+    
     }
     h3{
         text-align: center;
-        font-size: 18px;
-        font-weight: 400;
+       
     }
     .item{
         padding: 10px;
@@ -37,12 +34,12 @@
              .testimonial-text {
                 padding: 20px;
                 color: rgba(0, 0, 0, 0.582);
-                font-weight: 300;
-                line-height: 22px;
+           
+              
                 // max-width: 300px;
                 text-align: center;
                 overflow: auto;
-                font-size: 16px;
+           
                 text-transform: initial;
                 font-style: italic;
                 word-wrap: break-word;

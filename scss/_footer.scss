@@ -35,15 +35,12 @@
                 margin-bottom: 30px;
             }
             .footer_title{
-                font-size: 26px;
-                font-weight: 500;
+              
                 color: #fff;
-                text-transform: capitalize;
-                margin-bottom: 25px;
-                font-family: $font1;
-                @media #{$mobile_device} {
-                    margin-bottom: 20px;
-                }
+              
+                
+             
+                
             }
             .footer_logo{
                 font-size: 22px;
@@ -102,15 +99,13 @@
             ul{
                 li{
                     color: #8891a1;
-                    font-size: 16px;
-                    line-height: 40px;
+                 
+            
                     a{
                         color: #7A838B;
-                        font-weight: 300;
-                        font-family: $font1;
-                        &:hover{
-                            color: $btn-bg;
-                        }
+                        
+                        font-weight: normal;
+                      
                     }
                 }
             }

@@ -239,21 +239,6 @@
 .section_title {
   height: 100%;
 }
-.section_title h3 {
-  font-size: 40px;
-  font-weight: 700;
-  -webkit-box-align: CENTER;
-      -ms-flex-align: CENTER;
-          align-items: CENTER;
-  display: FLEX;
-  font-family: "Poppins", sans-serif;
-  color: #234262;
-}
-@media (max-width: 767px) {
-  .section_title h3 {
-    font-size: 30px;
-  }
-}
 .section_title h2 {
   font-size: 34px;
   text-transform: capitalize;
@@ -313,10 +298,45 @@
 html {
   font-size: 10px;
 }
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 6px;
+  }
+}
+@media (max-width: 420px) {
+  html {
+    font-size: 4px;
+  }
+}
 
 body {
   font-size: 10px;
   font-family: "Poppins", sans-serif;
+}
+@media (max-width: 991px) {
+  body {
+    font-size: 8px;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    font-size: 6px;
+  }
+}
+@media (max-width: 420px) {
+  body {
+    font-size: 4px;
+  }
 }
 
 :root {
@@ -333,26 +353,84 @@ p {
   list-style: none;
 }
 
-a {
+span {
   font-size: 1.4rem;
   color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+i {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
   text-decoration: none;
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 4.7rem;
   font-style: normal;
-  font-weight: 700;
-  line-height: 80px;
+  font-weight: 600;
+  line-height: 75.2 px;
+}
+
+h2 {
+  font-size: 3.9rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 62.4 px;
+}
+
+h3 {
+  font-size: 3.3rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52.8 px;
+}
+
+h4 {
+  font-size: 2.7rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 43.2 px;
+}
+
+h5 {
+  font-size: 2.3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36.8 px;
 }
 
 h6 {
-  text-align: center;
-  font-size: 12px;
+  font-size: 1.9rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 80px; /* 210.526% */
-  letter-spacing: -0.76px;
+  line-height: 36.8 px;
+}
+
+p {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36.8 px;
+}
+
+button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  text-transform: uppercase;
+  padding: 10px 50px;
+  letter-spacing: 1px;
+  background-color: var(--primary-color);
+  color: #fff;
 }
 
 .topBar {
@@ -384,9 +462,6 @@ h6 {
 .topBar ul li span {
   margin: 0 10px;
 }
-.topBar ul li i {
-  font-size: 16px;
-}
 .topBar .socialIcons {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -410,6 +485,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -423,9 +499,9 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .socialContact ul {
   display: -webkit-box;
@@ -440,12 +516,7 @@ h6 {
   display: -ms-flexbox;
   display: flex;
   font-weight: 800;
-}
-.socialContact ul li span {
   margin: 0 10px;
-  letter-spacing: 0.7px;
-  font-size: 1.4rem;
-  font-weight: 700;
 }
 .socialContact > button {
   background-color: var(--accent-color);
@@ -510,9 +581,7 @@ h6 {
   background-color: var(--primary-color);
 }
 .heroSection .menu > ul li a {
-  font-size: 15px;
   text-transform: uppercase;
-  font-weight: 500;
 }
 .heroSection .menu > ul li a:hover {
   color: white;
@@ -584,16 +653,6 @@ h6 {
 .heroSection .middleContent .ctaButton {
   margin-top: 30px;
 }
-.heroSection .middleContent .ctaButton button:first-child {
-  font-size: 1.8rem;
-  font-weight: 600;
-  border: none;
-  text-transform: uppercase;
-  padding: 10px 50px;
-  letter-spacing: 1px;
-  background-color: var(--primary-color);
-  color: white;
-}
 .heroSection .middleContent .ctaButton button:last-child {
   font-size: 1.6rem;
   font-weight: 400;
@@ -608,12 +667,11 @@ h6 {
 }
 
 .about {
-  margin: 100px;
   position: relative;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  border: 1px solid rgba(0, 0, 0, 0.185);
+  border: 1px solid rgba(0, 0, 0, 0.055);
   padding: 50px;
   background-color: white;
 }
@@ -624,18 +682,15 @@ h6 {
   height: 100%;
 }
 .about .section-title {
-  padding: 50px;
   padding-top: 0;
 }
 .about .title {
-  font-size: 40px !important;
-  font-weight: 700;
   text-transform: uppercase;
 }
 .about .para-desc {
   max-width: 600px;
   color: #8c98a4 !important;
-  font-size: 14px;
+  font-weight: 300;
 }
 .about .list-unstyled {
   padding-left: 0;
@@ -653,9 +708,6 @@ h6 {
 }
 .about .list-unstyled span {
   color: #3274f0 !important;
-  line-height: 1.5;
-  font-weight: 500;
-  font-size: 14px;
 }
 .about .buttonAbout {
   margin: 50px 0;
@@ -675,15 +727,9 @@ h6 {
   padding: 100px 0;
   position: relative;
 }
-.Addsection .section-title .title {
-  font-size: 45px !important;
-}
-.Addsection .section-title .para-desc {
-  max-width: 600px;
-  font-size: 15px;
-}
 .Addsection .section-title .text-muted {
   color: #8c98a4 !important;
+  font-weight: 400;
 }
 .Addsection .features i {
   font-size: 30px;
@@ -702,11 +748,9 @@ h6 {
           flex-direction: column;
 }
 .Addsection .features .content a {
-  font-size: 18px;
   font-weight: 600;
 }
 .Addsection .features .content p {
-  font-size: 14px;
   font-weight: 400;
 }
 
@@ -822,18 +866,10 @@ h6 {
   color: #ebb830;
 }
 .service_area .single_service .service_info h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
   color: #fff;
-  font-size: 25px;
-  margin-bottom: 7px;
 }
 .service_area .single_service .service_info p {
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: 400;
   color: #fff;
-  line-height: 1;
 }
 .service_area .col-lg-4:nth-child(2) .single_service {
   background: #317bd6;
@@ -844,8 +880,9 @@ h6 {
 .service_area .col-lg-4:nth-child(3) .single_service {
   background: #1fc2d9;
 }
-.service_area .col-lg-4:nth-child(3) .single_service .icon i {
-  color: #1fc2d9;
+.service_area .icon i {
+  color: #000000;
+  font-size: 4rem;
 }
 
 /*------------------
@@ -935,16 +972,14 @@ h6 {
   color: #232637;
   font-weight: 400;
 }
-.popular_program_area .single__program .program__content h4 {
-  font-size: 18px;
+.popular_program_area .single__program .program__content h5 {
   color: #232637;
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin-top: 10px;
 }
 .popular_program_area .single__program .program__content p {
   color: #7d84ab;
-  font-size: 14px;
+  font-weight: 300;
   margin-top: 23px;
   margin-bottom: 10px;
 }
@@ -962,9 +997,7 @@ h6 {
   }
 }
 .popular_program_area .nav a {
-  font-size: 16px;
   color: #234262;
-  font-weight: 400;
   display: inline-block;
   padding: 8px 22px;
 }
@@ -1062,7 +1095,6 @@ h6 {
   padding: 50px;
 }
 .cta .text-content h2 {
-  font-size: 35px;
   margin-bottom: 20px;
   color: black;
 }
@@ -1073,7 +1105,6 @@ h6 {
 }
 .cta .text-content p {
   color: rgba(0, 0, 0, 0.582);
-  font-size: 14px;
 }
 .cta .button {
   margin-top: 20px;
@@ -1099,19 +1130,13 @@ h6 {
 }
 
 .testimonial {
-  padding: 50px;
   background-color: #F8F9FA;
-  margin: 100px;
 }
 .testimonial h2 {
   text-align: center;
-  font-size: 48px;
-  font-weight: 600;
 }
 .testimonial h3 {
   text-align: center;
-  font-size: 18px;
-  font-weight: 400;
 }
 .testimonial .item {
   padding: 10px;
@@ -1144,11 +1169,8 @@ h6 {
 .testimonial .item .innerTes .testimonial-text {
   padding: 20px;
   color: rgba(0, 0, 0, 0.582);
-  font-weight: 300;
-  line-height: 22px;
   text-align: center;
   overflow: auto;
-  font-size: 16px;
   text-transform: initial;
   font-style: italic;
   word-wrap: break-word;
@@ -1195,15 +1217,6 @@ h6 {
 .faqs {
   padding: 10px;
   padding-bottom: 80px;
-}
-.faqs .section-title .title {
-  font-size: 50px !important;
-  font-weight: 700;
-  margin: 30px 0;
-}
-.faqs .section-title .para-desc {
-  max-width: 600px;
-  font-size: 15px;
 }
 .faqs .section-title .text-muted {
   color: #8c98a4 !important;
@@ -2244,14 +2257,6 @@ button.accordion-button.border-0.bg-white {
 }
 .collegeViewPage .tabLinks button {
   font-size: 1.4rem;
-}
-
-html {
-  font-size: 10px;
-}
-
-body {
-  font-size: 10px;
 }
 
 .mietViewPage {
@@ -3681,17 +3686,7 @@ body {
   }
 }
 .footer .footer_top .footer_widget .footer_title {
-  font-size: 26px;
-  font-weight: 500;
   color: #fff;
-  text-transform: capitalize;
-  margin-bottom: 25px;
-  font-family: "Poppins", sans-serif;
-}
-@media (max-width: 767px) {
-  .footer .footer_top .footer_widget .footer_title {
-    margin-bottom: 20px;
-  }
 }
 .footer .footer_top .footer_widget .footer_logo {
   font-size: 22px;
@@ -3745,16 +3740,10 @@ body {
 }
 .footer .footer_top .footer_widget ul li {
   color: #8891a1;
-  font-size: 16px;
-  line-height: 40px;
 }
 .footer .footer_top .footer_widget ul li a {
   color: #7A838B;
-  font-weight: 300;
-  font-family: "Poppins", sans-serif;
-}
-.footer .footer_top .footer_widget ul li a:hover {
-  color: #1fc2d9;
+  font-weight: normal;
 }
 .footer .footer_top .footer_widget .newsletter_form {
   position: relative;

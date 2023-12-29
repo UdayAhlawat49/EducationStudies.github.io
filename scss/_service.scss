@@ -28,18 +28,14 @@
         }
         .service_info{
             h4{
-                font-family: $font1;
-                font-weight: 500;
+                 
                 color: #fff;
-                font-size: 25px;
-                margin-bottom: 7px;
+             
             }
             p{
-                margin-bottom: 0;
-                font-size: 18px;
-                font-weight: 400;
+                 
                 color: #fff;
-                line-height: 1;
+              
             }
         }
     }
@@ -53,12 +49,14 @@
     }
     .col-lg-4:nth-child(3) .single_service{
         background: #1fc2d9;
-        .icon{
+      
+    }
+      .icon{
             i{
-                color: #1fc2d9;
+                color: #000000;
+                font-size: 4rem;
             }
         }
-    }
 }
 
   
