@@ -479,7 +479,7 @@ h6 {
   display: none;
 }
 .heroSection .menu {
-  background-color: var(--nutral-color);
+  background-color: var(--accent-color);
   position: relative;
   z-index: 1;
   top: 0;
@@ -507,12 +507,12 @@ h6 {
   width: 100%;
   border-right: 1px solid white;
   padding: 5px 0;
-  background-color: var(--nutral-color);
+  background-color: var(--primary-color);
 }
 .heroSection .menu > ul li a {
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 500;
 }
 .heroSection .menu > ul li a:hover {
   color: white;
@@ -1922,6 +1922,548 @@ h6 {
   font-size: 12px;
   font-weight: 300;
   margin-right: 9px;
+}
+
+.collegeViewPage {
+  margin-top: 30px;
+}
+.collegeViewPage .collegeViewImage {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.collegeViewPage .collegeViewImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.collegeViewPage .collgeViewHeading {
+  padding: 30px 50px;
+  display: block;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: rgb(160, 25, 25);
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin: -15px;
+}
+.collegeViewPage .collgeViewHeading .collegeViewMainHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.collegeViewPage .collgeViewHeading .collegeViewMainHead .collegeLogo {
+  margin: 0 10px;
+}
+.collegeViewPage .collgeViewHeading .collegeViewMainHead .subheading h2 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 50px;
+}
+.collegeViewPage .collgeViewHeading .collegeViewMainHead .subheading p {
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+.collegeViewPage .CVmiddleContent {
+  color: black;
+  padding: 0 30px;
+}
+.collegeViewPage .CVmiddleContent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.collegeViewPage .CVmiddleContent ul li {
+  margin: 0 10px;
+}
+.collegeViewPage .CVmiddleContent ul li span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.collegeViewPage .collegeViewBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.collegeViewPage .collegeViewBtn .call span {
+  padding: 10px 15px;
+  background-color: #f37921;
+  margin: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.collegeViewPage .CollegeViewtabConent {
+  margin: 20px 0;
+}
+.collegeViewPage .CollegeViewtabConent h2 {
+  margin: 10px 0;
+}
+.collegeViewPage .CollegeViewtabConent h3 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.collegeViewPage .CollegeViewtabConent p {
+  font-size: 1.2rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.849);
+  letter-spacing: 0.5px;
+}
+.collegeViewPage .CollegeViewtabConent .overview {
+  margin: 20px 0;
+}
+.collegeViewPage .CollegeViewtabConent .overview h2 {
+  margin: 10px 0;
+}
+.collegeViewPage .CollegeViewtabConent .overview p {
+  font-size: 1.2rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.849);
+  letter-spacing: 0.5px;
+}
+.collegeViewPage .CollegeViewtabConent .overview1 h2 {
+  margin: 10px 0;
+}
+.collegeViewPage .CollegeViewtabConent .overview1 .innerOverview1 {
+  background-color: #E8E3E8;
+  padding: 15px;
+  padding-bottom: 0;
+}
+.collegeViewPage .CollegeViewtabConent .overview1 .innerOverview1 .subContent {
+  padding: 10px;
+}
+.collegeViewPage .CollegeViewtabConent .overview1 .innerOverview1 .subContent p {
+  font-size: 1.3rem;
+  line-height: 19px;
+  font-weight: 300;
+}
+.collegeViewPage .CollegeViewtabConent .overview1 .innerOverview1 .subContent p:first-child {
+  line-height: 19px;
+  font-size: 1.2rem;
+  color: rgba(255, 0, 0, 0.733);
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .allCourses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 10px 0;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .allCourses span {
+  background-color: #662974;
+  color: white;
+  font-weight: 600;
+  padding: 5px 30px;
+  font-size: 1.4rem;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  border-width: 50%;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees .courseName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees .courseName span:first-child {
+  color: blue;
+  font-size: 1.6rem;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees .courseName span:last-child {
+  font-size: 1rem;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees .annualFee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees .annualFee span:first-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees .annualFee span:last-child {
+  color: orange;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees .Apply {
+  font-size: 1.4rem;
+  background-color: #f37921;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 20px;
+}
+.collegeViewPage .CollegeViewtabConent .feesStructure .courseFees .Apply span {
+  line-height: 0;
+}
+.collegeViewPage .CollegeViewtabConent a {
+  color: blue;
+}
+.collegeViewPage .CollegeViewtabConent .TableOfContent ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+}
+.collegeViewPage .CollegeViewtabConent .TableOfContent ol li {
+  counter-increment: my-awesome-counter;
+  margin: 10px 0;
+  position: relative;
+  padding-right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+.collegeViewPage .CollegeViewtabConent .TableOfContent ol li::before {
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+  position: absolute;
+  left: 5px;
+}
+.collegeViewPage .CollegeViewtabConent .TableOfContent ol li::marker {
+  font-size: 1.6rem;
+  border: 1px solid black;
+}
+.collegeViewPage .CollegeViewtabConent .TableOfContent ol li a {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.collegeViewPage .CollegeViewtabConent .TableOfContent ol li a:hover {
+  color: blue;
+}
+.collegeViewPage .CollegeViewtabConent .Ranking ul {
+  list-style: disc;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+.collegeViewPage .tabLinks {
+  margin: 30px 0;
+  margin-bottom: 0;
+}
+.collegeViewPage .tabLinks button {
+  font-size: 1.4rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 10px;
+}
+
+.mietViewPage {
+  margin-top: 30px;
+}
+.mietViewPage .collegeViewImage {
+  display: block;
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+}
+.mietViewPage .collegeViewImage img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.mietViewPage .collgeViewHeading {
+  padding: 30px 50px;
+  display: block;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  color: rgb(160, 25, 25);
+  position: relative;
+  z-index: 2;
+  border: 1px solid rgba(0, 0, 0, 0.103);
+  margin: 10px;
+  border-radius: 10px;
+  background-color: white;
+  margin: -15px;
+}
+.mietViewPage .collgeViewHeading .collegeViewMainHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.mietViewPage .collgeViewHeading .collegeViewMainHead .collegeLogo {
+  margin: 0 10px;
+}
+.mietViewPage .collgeViewHeading .collegeViewMainHead .subheading h2 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 50px;
+}
+.mietViewPage .collgeViewHeading .collegeViewMainHead .subheading p {
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+}
+.mietViewPage .CVmiddleContent {
+  color: black;
+  padding: 0 30px;
+}
+.mietViewPage .CVmiddleContent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.mietViewPage .CVmiddleContent ul li {
+  margin: 0 10px;
+}
+.mietViewPage .CVmiddleContent ul li span {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.mietViewPage .collegeViewBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mietViewPage .collegeViewBtn .call span {
+  padding: 10px 15px;
+  background-color: #f37921;
+  margin: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.mietViewPage .CollegeViewtabConent {
+  margin: 20px 0;
+}
+.mietViewPage .CollegeViewtabConent h2 {
+  margin: 10px 0;
+}
+.mietViewPage .CollegeViewtabConent h3 {
+  margin: 10px 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.mietViewPage .CollegeViewtabConent p {
+  font-size: 1.2rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.849);
+  letter-spacing: 0.5px;
+}
+.mietViewPage .CollegeViewtabConent .overview {
+  margin: 20px 0;
+}
+.mietViewPage .CollegeViewtabConent .overview h2 {
+  margin: 10px 0;
+}
+.mietViewPage .CollegeViewtabConent .overview p {
+  font-size: 1.2rem;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.849);
+  letter-spacing: 0.5px;
+}
+.mietViewPage .CollegeViewtabConent .overview1 h2 {
+  margin: 10px 0;
+}
+.mietViewPage .CollegeViewtabConent .overview1 .innerOverview1 {
+  background-color: #E8E3E8;
+  padding: 15px;
+  padding-bottom: 0;
+}
+.mietViewPage .CollegeViewtabConent .overview1 .innerOverview1 .subContent {
+  padding: 10px;
+}
+.mietViewPage .CollegeViewtabConent .overview1 .innerOverview1 .subContent p {
+  font-size: 1.3rem;
+  line-height: 19px;
+  font-weight: 300;
+}
+.mietViewPage .CollegeViewtabConent .overview1 .innerOverview1 .subContent p:first-child {
+  line-height: 19px;
+  font-size: 1.2rem;
+  color: rgba(255, 0, 0, 0.733);
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .allCourses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 10px 0;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .allCourses span {
+  background-color: #662974;
+  color: white;
+  font-weight: 600;
+  padding: 5px 30px;
+  font-size: 1.4rem;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+  border-width: 50%;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees .courseName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees .courseName span:first-child {
+  color: blue;
+  font-size: 1.6rem;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees .courseName span:last-child {
+  font-size: 1rem;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees .annualFee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees .annualFee span:first-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees .annualFee span:last-child {
+  color: orange;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees .Apply {
+  font-size: 1.4rem;
+  background-color: #f37921;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2px 20px;
+}
+.mietViewPage .CollegeViewtabConent .feesStructure .courseFees .Apply span {
+  line-height: 0;
+}
+.mietViewPage .CollegeViewtabConent a {
+  color: blue;
+}
+.mietViewPage .CollegeViewtabConent .TableOfContent ol {
+  counter-reset: my-awesome-counter;
+  list-style: none;
+}
+.mietViewPage .CollegeViewtabConent .TableOfContent ol li {
+  counter-increment: my-awesome-counter;
+  margin: 10px 0;
+  position: relative;
+  padding-right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+.mietViewPage .CollegeViewtabConent .TableOfContent ol li::before {
+  content: counter(my-awesome-counter);
+  background: #662974;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  line-height: 2rem;
+  color: white;
+  text-align: center;
+  margin-right: 0.5rem;
+  position: absolute;
+  left: 5px;
+}
+.mietViewPage .CollegeViewtabConent .TableOfContent ol li::marker {
+  font-size: 1.6rem;
+  border: 1px solid black;
+}
+.mietViewPage .CollegeViewtabConent .TableOfContent ol li a {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.mietViewPage .CollegeViewtabConent .TableOfContent ol li a:hover {
+  color: blue;
+}
+.mietViewPage .CollegeViewtabConent .Ranking ul {
+  list-style: disc;
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+.mietViewPage .tabLinks {
+  margin: 30px 0;
+  margin-bottom: 0;
+}
+.mietViewPage .tabLinks button {
+  font-size: 1.4rem;
 }
 
 /* Start Blog Area css

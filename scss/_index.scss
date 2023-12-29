@@ -169,7 +169,7 @@ h6 {
 
   // desktop menu
   .menu {
-    background-color: var(--nutral-color);
+    background-color: var(--accent-color);
     position: relative;
     z-index: 1;
     top: 0;
@@ -188,12 +188,12 @@ h6 {
         width: 100%;
         border-right: 1px solid white;
         padding: 5px 0;
-        background-color: var(--nutral-color);
+        background-color: var(--primary-color);
 
         a {
-          font-size: 12px;
+          font-size: 15px;
           text-transform: uppercase;
-          font-weight: 400;
+          font-weight: 500;
           &:hover {
             color: white;
           }

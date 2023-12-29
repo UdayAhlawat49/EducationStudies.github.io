@@ -1,0 +1,263 @@
+html{
+  font-size: 10px;
+
+}
+body{
+  font-size: 10px;
+}
+.mietViewPage {
+
+  margin-top: 30px;
+  .collegeViewImage {
+    display: block;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.123);
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .collgeViewHeading {
+    padding: 30px 50px;
+    display: block;
+    justify-content: left;
+    color: rgb(160, 25, 25);
+    position: relative;
+    z-index: 2;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: -15px;
+
+    .collegeViewMainHead {
+      display: flex;
+      align-items: center;
+      .collegeLogo {
+        margin: 0 10px;
+      }
+      .subheading {
+        h2 {
+          font-size: 5rem;
+          font-weight: 600;
+          line-height: 50px;
+        }
+        p {
+          font-size: 1rem;
+          letter-spacing: 1.2px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  .CVmiddleContent {
+    color: black;
+    padding: 0 30px;
+    ul {
+      display: flex;
+      justify-content: start;
+      li {
+        margin: 0 10px;
+        span {
+          font-size: 1.2rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .collegeViewBtn {
+    display: flex;
+
+    .call {
+      span {
+        padding: 10px 15px;
+        background-color: #f37921;
+        margin: 5px;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+      }
+    }
+  }
+
+  //   tabs conent
+  .CollegeViewtabConent {
+    h2{
+        margin: 10px 0;
+    }
+    h3{
+        margin: 10px 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 20px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.849);
+        letter-spacing: .5px;
+    }
+    margin: 20px 0;
+    .overview{
+        margin: 20px 0;
+        h2{
+            margin: 10px 0;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 20px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.849);
+            letter-spacing: .5px;
+        }
+    }
+    .overview1{
+        h2{
+            margin: 10px 0;
+        }
+        .innerOverview1{
+            background-color: #E8E3E8;
+            padding: 15px;
+           padding-bottom: 0;
+            .subContent{
+                padding: 10px;
+                p{
+                    font-size: 1.3rem;
+                    line-height: 19px;
+                    font-weight: 300;
+                }
+                p:first-child{
+                    line-height: 19px;
+                    font-size: 1.2rem;
+                    color: rgba(255, 0, 0, 0.733);
+                }
+            }
+        }
+       
+    }
+    .feesStructure{
+        .allCourses{
+            display: flex;
+            justify-content: end;
+            margin: 10px 0;
+            span{
+                background-color: #662974;
+                color: white;
+                font-weight: 600;
+                padding: 5px 30px;
+                font-size: 1.4rem;
+            }
+        }
+        .courseFees{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+         
+            border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+            border-width: 50%;
+            .courseName{
+                display: flex;
+                flex-direction: column;
+                span:first-child{
+                    color: blue;
+                    font-size: 1.6rem;
+                }
+                span:last-child{
+                    font-size: 1rem;
+                }
+            }
+            .annualFee{
+                display: flex;
+                flex-direction: column;
+                span:first-child{
+                     font-size: 1.2rem;
+                     font-weight: 600;
+                }
+                span:last-child{
+                    color: orange;
+                    font-size: 1.4rem;
+                    font-weight: 600;
+
+                }
+            }
+            .Apply{
+                font-size: 1.4rem;
+                background-color: #f37921;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 2px 20px;
+                span{
+                    line-height: 0;
+                }
+            }
+        }
+    }
+    a {
+      color: blue;
+    }
+
+    .TableOfContent {
+        ol {
+          counter-reset: my-awesome-counter;
+          list-style: none;
+          li {
+            counter-increment: my-awesome-counter;
+            margin: 10px 0;
+            position: relative;
+            &::before {
+              content: counter(my-awesome-counter);
+              background: #662974;
+              width: 2rem;
+              height: 2rem;
+              display: inline-block;
+              line-height: 2rem;
+              color: white;
+              text-align: center;
+              margin-right: 0.5rem;
+              position: absolute;
+              left: 5px;
+            }
+            &::marker {
+              font-size: 1.6rem;
+              border: 1px solid black;
+            }
+  
+            padding-right: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+            a {
+              color: black;
+              font-size: 1.2rem;
+              font-weight: 600;
+              &:hover {
+                color: blue;
+              }
+            }
+          }
+        }
+      }
+
+
+      .Ranking{
+        ul{
+            list-style: disc;
+            padding: 0 20px;
+            font-size: 1.2rem;
+        }
+      }
+  }
+
+  .tabLinks{
+    margin: 30px 0;
+    margin-bottom: 0;
+    button{
+        font-size: 1.4rem;
+    }
+  }
+}
