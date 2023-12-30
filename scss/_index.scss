@@ -133,7 +133,7 @@ p {
   line-height: calc(23 * 1.6) px;
 }
 button {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   border: none;
   text-transform: uppercase;
@@ -141,6 +141,12 @@ button {
   letter-spacing: 1px;
   background-color: var(--accent-color);
   color: #fff;
+  margin: 15px 0;
+  margin-bottom: 0;
+  &:hover{
+    background-color: var(--primary-color);
+    
+  }
 }
 
 // ----------------------------------- header -------------------
@@ -226,11 +232,11 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 690px;
+  height: 700px;
 
   position: relative;
   @media #{$tab}{
-    height: 700px;
+    height: 600px;
     padding: 100px 0;
     padding-bottom: 0;
   }
@@ -391,7 +397,7 @@ button {
     .ctaButton {
       margin: 50px 0;
         @media #{$tab}{
-          margin-top: 100px;
+          margin-top: 20px;
           margin-bottom: 0;
           width: 100%;
         }
@@ -529,10 +535,19 @@ button {
 .popular_program_area {
   background-color: #f8f9fa;
   padding: 20px 0;
+  padding-bottom: 10px;
+  button{
+    width: 100%;
+
+  }
 }
 .popular_program_area1 {
   background-color: white;
   padding: 20px 0;
+  button{
+    width: 100%;
+
+  }
 }
 // ************************************** footer
 // footer
@@ -564,7 +579,7 @@ button {
   .navigation {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
     width: 100%;
   }
@@ -610,6 +625,7 @@ button {
     p{
       font-weight: 600;
       text-transform: uppercase;
+      padding: 12px;
     }
    }
     .btn-close{

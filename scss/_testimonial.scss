@@ -24,7 +24,8 @@
         text-align: center;
      
         @media #{$small_mobile}{
-            font-size: 3rem;
+            font-size: 2.8rem;
+            margin: 5px;
         }
     }
     h3{
@@ -56,7 +57,7 @@
             }
              .testimonial-text {
                 padding: 20px;
-                color: rgba(0, 0, 0, 0.582);
+                color: rgb(0, 0, 0);
            
               
                 // max-width: 300px;
@@ -85,13 +86,18 @@
                 .intro{
                     display: flex;
     flex-direction: column;
-                    .testimonial-author-name {
+                     .testimonial-author-name {
                         font-size: 14px;
                         margin-left: 20px;
+                        color: #000;
                     }   
                     .testimonial-author-position {
                         font-size: 12px;
+                        margin-left: 0;
                         margin-left: 20px;
+
+                        color: #000;
+
                     }
                 }
             }

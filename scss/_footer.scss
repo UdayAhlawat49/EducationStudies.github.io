@@ -10,9 +10,9 @@
     .footer_top{
         padding-top: 120px;
         padding-bottom: 110px;
-        @media #{$mobile_device} {
-            padding-top: 60px;
-            padding-bottom: 30px;
+        @media #{$small_mobile} {
+    
+            padding:20px ;
         }
         .footer_widget{
             .logo{
@@ -99,12 +99,15 @@
             ul{
                 li{
                     color: #8891a1;
-                 
+                    padding: 10px;
             
                     a{
                         color: #7A838B;
                         
-                        font-weight: normal;
+                        font-weight: 500;
+                        padding: 20px;
+                        font-size: 1.6rem;
+                        text-transform: capitalize;
                       
                     }
                 }

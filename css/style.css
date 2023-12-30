@@ -431,7 +431,7 @@ p {
 }
 
 button {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   border: none;
   text-transform: uppercase;
@@ -439,6 +439,11 @@ button {
   letter-spacing: 1px;
   background-color: var(--accent-color);
   color: #fff;
+  margin: 15px 0;
+  margin-bottom: 0;
+}
+button:hover {
+  background-color: var(--primary-color);
 }
 
 .topBar {
@@ -545,12 +550,12 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 690px;
+  height: 700px;
   position: relative;
 }
 @media (max-width: 991px) {
   .heroSection {
-    height: 700px;
+    height: 600px;
     padding: 100px 0;
     padding-bottom: 0;
   }
@@ -712,7 +717,7 @@ button {
 }
 @media (max-width: 991px) {
   .heroSection .middleContent .ctaButton {
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 0;
     width: 100%;
   }
@@ -856,11 +861,18 @@ button {
 .popular_program_area {
   background-color: #f8f9fa;
   padding: 20px 0;
+  padding-bottom: 10px;
+}
+.popular_program_area button {
+  width: 100%;
 }
 
 .popular_program_area1 {
   background-color: white;
   padding: 20px 0;
+}
+.popular_program_area1 button {
+  width: 100%;
 }
 
 @media (max-width: 992px) {
@@ -885,7 +897,7 @@ button {
   .navigation {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background-color: white;
     width: 100%;
   }
@@ -927,6 +939,7 @@ button {
 .mobileMenu .offcanvas .offcanvas-body p {
   font-weight: 600;
   text-transform: uppercase;
+  padding: 12px;
 }
 .mobileMenu .offcanvas .btn-close {
   font-size: 16px;
@@ -1198,7 +1211,7 @@ button {
 }
 .cta .text-content {
   background: white;
-  z-index: 333;
+  z-index: 1;
   position: relative;
   border-radius: 5px;
   padding: 50px;
@@ -1263,7 +1276,8 @@ button {
 }
 @media (max-width: 576px) {
   .testimonial h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    margin: 5px;
   }
 }
 .testimonial h3 {
@@ -1304,7 +1318,7 @@ button {
 }
 .testimonial .item .innerTes .testimonial-text {
   padding: 20px;
-  color: rgba(0, 0, 0, 0.582);
+  color: rgb(0, 0, 0);
   text-align: center;
   overflow: auto;
   text-transform: initial;
@@ -1344,10 +1358,13 @@ button {
 .testimonial .item .innerTes .testimonial-author .intro .testimonial-author-name {
   font-size: 14px;
   margin-left: 20px;
+  color: #000;
 }
 .testimonial .item .innerTes .testimonial-author .intro .testimonial-author-position {
   font-size: 12px;
+  margin-left: 0;
   margin-left: 20px;
+  color: #000;
 }
 
 .faqs {
@@ -3795,10 +3812,9 @@ button.accordion-button.border-0.bg-white {
   padding-top: 120px;
   padding-bottom: 110px;
 }
-@media (max-width: 767px) {
+@media (max-width: 576px) {
   .footer .footer_top {
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding: 20px;
   }
 }
 .footer .footer_top .footer_widget .logo {
@@ -3884,10 +3900,14 @@ button.accordion-button.border-0.bg-white {
 }
 .footer .footer_top .footer_widget ul li {
   color: #8891a1;
+  padding: 10px;
 }
 .footer .footer_top .footer_widget ul li a {
   color: #7A838B;
-  font-weight: normal;
+  font-weight: 500;
+  padding: 20px;
+  font-size: 1.6rem;
+  text-transform: capitalize;
 }
 .footer .footer_top .footer_widget .newsletter_form {
   position: relative;
