@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
 }
 html {
@@ -12,14 +11,14 @@ html {
   //   font-size: 14px;
   // }
   @media #{$tab} {
-    font-size: 9.5px;
+    font-size: 9.7px;
   }
   @media #{$small_mobile} {
-    font-size: 8.7px;
+    font-size: 9.7px;
   }
 
   @media #{$xs_mobile} {
-    font-size: 8.7px;
+    font-size: 9.7px;
   }
 }
 body {
@@ -50,85 +49,134 @@ p {
   padding: 0;
   list-style: none;
 }
-span {
-  font-size: 1.4rem;
-  color: white;
-  font-weight: 500;
+// Typography Variables
+$font-color: white;
+// $font-size-base: 1.6rem;
+$light: 300;
+$regular: 400;
+$semi-bold: 500;
+$bold: 700;
+$bolder: 900;
+
+ 
+// Global Reset
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Common Styles for Inline Elements
+span, i, a {
   text-decoration: none;
 }
+
+// Typography Styles
+span {
+  font-size: 1.2rem;
+  color: $font-color;
+  font-weight:$regular;
+}
+
 i {
   font-size: 1.6rem;
-
-  font-weight: 500;
-  text-decoration: none;
+  font-weight: $semi-bold;
 }
+
 a {
   font-size: 1.4rem;
   color: rgb(255, 255, 255);
-  font-weight: 700;
-  text-decoration: none;
-  @media #{$tab}{
-    font-size: 1.42rem;
-    font-weight: 600;
-    text-transform: uppercase;
-
-  }
+  font-weight: $bold;
+ 
 }
-// headings
+
+// Headings
 
 h1 {
-  // color: #fff;
-  font-size: 9rem;
-  font-style: normal;
-  font-weight: 600;
-  
+  font-size: 9.6rem;
+   letter-spacing: -1.5px;
 }
 
 h2 {
-  // color: #fff;
-  font-size: 2.4rem;
-  font-style: normal;
-  font-weight: 600;
-  
-}
+  font-size:6rem;
+  letter-spacing: -.5px;
+ }
+
 h3 {
-  // color: #fff;
-  font-size: 2.2rem;
-  font-style: normal;
-  font-weight: 600;
- }
-h4 {
-  // color: #fff;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 600;
-   @media #{$small_mobile}{
-    font-size: 2rem;
-}
-}
-h5 {
-  // color: #fff;
-  font-size: 1.9rem;
-  font-style: normal;
-  font-weight: 500;
- }
-h6 {
-  // color: #fff;
-  font-size: 1.8rem;
-  font-style: 300;
-  font-weight: 300;
-   opacity: 0.9;
+  font-size: 4.8rem;
+   letter-spacing: 0;
 }
 
-p {
-  // color: #fff;
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 400;
-  // line-height: 20px;
-  @media #{$small_mobile}{
-    font-size: 1.6rem;
+h4 {
+  font-size: 3.4rem;
+  letter-spacing: 0.25px;
+ 
 }
+
+h5 {
+  font-size: 2.4rem;
+   letter-spacing: 0;
+}
+
+h6 {
+  font-size: 2rem;
+   letter-spacing: 0.15px;
+   
+}
+
+// Additional Font Weights for Headings
+@for $i from 1 through 6 {
+  h#{$i}.light {
+    font-weight: $light;
+  }
+  h#{$i}.regular {
+    font-weight: $regular;
+  }
+
+  h#{$i}.semibold {
+    font-weight: $semi-bold;
+  }
+
+  h#{$i}.bolder {
+    font-weight: $bolder;
+  }
+
+  h#{$i}.bold {
+    font-weight: $bold;
+  }
+}
+// Paragraphs
+p {
+  font-size: 1.6rem;
+  font-weight: $regular;
+ 
+}
+
+// Additional Font Weights for Paragraphs
+p.light {
+  font-weight: $light;
+}
+p.regular {
+  font-weight: $regular;
+}
+p.semibold {
+  font-weight: $semi-bold;
+}
+
+p.bold {
+  font-weight: $bold;
+}
+p.bolder {
+  font-weight: $bolder;
+}
+
+// Paragraphs
+p.overline{
+  font-size: 1rem;
+  font-weight: $regular;  
+  letter-spacing: 1.5;
+ 
 }
 button {
   font-size: 1.6rem;
@@ -297,12 +345,12 @@ position: relative;
       }
     }
     .subHead {
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 150%;
-      font-style: normal;
-      letter-spacing: 1px;
-      text-align: center;
+      // font-size: 1.6rem;
+      // font-weight: 300;
+      // line-height: 150%;
+      // font-style: normal;
+      // letter-spacing: 1px;
+      // text-align: center;
       @media #{$tab}{
         text-align: start;
       }
@@ -532,12 +580,7 @@ position: relative;
       display: flex;
       justify-content: center;
       flex-direction: column;
-      a {
-        font-weight: 600;
-      }
-      p {
-        font-weight: 400;
-      }
+     
     }
   }
 }

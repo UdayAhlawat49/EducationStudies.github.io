@@ -13,12 +13,10 @@ $color_2: #eee;
 		padding: 90px 0;
 	}
 	.text-content {
-		background: white;
-		z-index: 1;
+ 		z-index: 1;
 		position: relative;
 		border-radius: 5px;
-		padding: 50px;
-		@media #{$tab}{
+ 		@media #{$tab}{
 			padding: 20px;
 		  }
 		h2 {
