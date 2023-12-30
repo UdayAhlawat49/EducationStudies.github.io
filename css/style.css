@@ -36,17 +36,17 @@ body {
 }
 @media (max-width: 991px) {
   body {
-    font-size: 9.5px;
+    font-size: 9.7px;
   }
 }
 @media (max-width: 576px) {
   body {
-    font-size: 9.5px;
+    font-size: 9.7px;
   }
 }
 @media (max-width: 420px) {
   body {
-    font-size: 9.5px;
+    font-size: 9.7px;
   }
 }
 
@@ -136,7 +136,7 @@ h6 {
 p {
   font-size: 1.6rem;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
 }
 @media (max-width: 576px) {
   p {
@@ -512,8 +512,7 @@ button:hover {
 }
 .about .para-desc {
   max-width: 600px;
-  color: #8c98a4 !important;
-  font-weight: 300;
+  color: #000000 !important;
 }
 .about .list-unstyled {
   padding-left: 0;
@@ -785,8 +784,7 @@ button:hover {
   margin-top: 10px;
 }
 .popular_program_area .single__program .program__content p {
-  color: #7d84ab;
-  font-weight: 300;
+  color: #000000;
   margin-top: 23px;
   margin-bottom: 10px;
 }
@@ -854,7 +852,7 @@ button:hover {
   color: blue;
 }
 .cta .text-content p {
-  color: rgba(0, 0, 0, 0.582);
+  color: rgb(0, 0, 0);
 }
 .cta .button {
   margin-top: 20px;

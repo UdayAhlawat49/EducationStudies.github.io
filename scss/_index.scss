@@ -26,14 +26,14 @@ body {
   font-size: 10px;
   font-family: "Poppins", sans-serif;
   @media #{$tab} {
-    font-size: 9.5px;
+    font-size: 9.7px;
   }
   @media #{$small_mobile} {
-    font-size: 9.5px;
+    font-size: 9.7px;
   }
 
   @media #{$xs_mobile} {
-    font-size: 9.5px;
+    font-size: 9.7px;
   }
 }
 
@@ -124,7 +124,7 @@ p {
   // color: #fff;
   font-size: 1.6rem;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   // line-height: 20px;
   @media #{$small_mobile}{
     font-size: 1.6rem;
@@ -472,9 +472,8 @@ position: relative;
   }
   .para-desc {
     max-width: 600px;
-    color: #8c98a4 !important;
-    font-weight: 300;
-  }
+    color: #000000 !important;
+   }
   .list-unstyled {
     padding-left: 0;
     list-style: none;
