@@ -36,17 +36,17 @@ body {
 }
 @media (max-width: 991px) {
   body {
-    font-size: 9px;
+    font-size: 9.5px;
   }
 }
 @media (max-width: 576px) {
   body {
-    font-size: 8.5px;
+    font-size: 9.5px;
   }
 }
 @media (max-width: 420px) {
   body {
-    font-size: 8px;
+    font-size: 9.5px;
   }
 }
 
@@ -140,7 +140,7 @@ p {
 }
 @media (max-width: 576px) {
   p {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 

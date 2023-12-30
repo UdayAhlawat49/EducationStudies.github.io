@@ -26,14 +26,14 @@ body {
   font-size: 10px;
   font-family: "Poppins", sans-serif;
   @media #{$tab} {
-    font-size: 9px;
+    font-size: 9.5px;
   }
   @media #{$small_mobile} {
-    font-size: 8.5px;
+    font-size: 9.5px;
   }
 
   @media #{$xs_mobile} {
-    font-size: 8px;
+    font-size: 9.5px;
   }
 }
 
@@ -127,7 +127,7 @@ p {
   font-weight: 300;
   // line-height: 20px;
   @media #{$small_mobile}{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 }
 button {
