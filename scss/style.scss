@@ -1,31 +1,23 @@
-@import 'varriable.scss';
-@import 'responsive.scss';
+ @import 'responsive.scss';
 
-@import 'mixins.scss';
-@import 'btn';
-@import 'extend';
+  
  
-@import 'section_title';
-
 
 
 @import 'index';
 
 @import 'service';
-@import 'category';
-@import 'program';
 
-// header
-@import 'header'; 
+  @import 'program';
+
+ 
 
 @import 'cta';
 
 @import 'testimonial';
 @import 'faq';
 
-@import '_news';
-@import 'event';
-
+ 
 
 @import 'course';
 
@@ -40,9 +32,7 @@
 // mietView page
 @import 'mietView';
 // about page
-@import 'about';
-// blog page
-@import 'blog';
-@import 'footer';
+ // blog page
+ @import 'footer';
 
-@import 'vselect';
+ 

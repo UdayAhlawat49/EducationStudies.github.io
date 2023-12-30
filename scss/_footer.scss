@@ -197,8 +197,7 @@
         ul{
             li{
                 display: inline-block;
-                @include transition(.3s);
-                margin-right: 5px;
+                 margin-right: 5px;
                 @media #{$mobile_device} {
                     margin-right: 0;
                 }
@@ -214,8 +213,7 @@
                     color: #fff !important;
                     line-height: 60px !important;
                     color: #fff !important;
-                    @include transition(.3s);
-                    i{
+                     i{
                         font-size: 20px;
                         position: relative;
                     }
@@ -232,8 +230,7 @@
                 }
                 &:hover a{
                     color: #fff !important;
-                    background: $btn-bg !important;
-                }
+                 }
             }
         }
     }

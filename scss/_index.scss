@@ -81,49 +81,43 @@ h1 {
   font-size: 9rem;
   font-style: normal;
   font-weight: 600;
-  line-height: calc(47 * 1.6) px;
- 
+  
 }
 
 h2 {
   // color: #fff;
-  font-size: 2.6rem;
-  font-style: normal;
-  font-weight: 600;
-  line-height: calc(39 * 1.6) px;
- 
-}
-h3 {
-  // color: #fff;
   font-size: 2.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 33px;
+  
 }
-h4 {
+h3 {
   // color: #fff;
   font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 25px;
-  @media #{$small_mobile}{
+ }
+h4 {
+  // color: #fff;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+   @media #{$small_mobile}{
     font-size: 2rem;
 }
 }
 h5 {
   // color: #fff;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   font-style: normal;
-  font-weight: 300;
-  line-height:23px;
-}
+  font-weight: 500;
+ }
 h6 {
   // color: #fff;
   font-size: 1.8rem;
   font-style: 300;
   font-weight: 300;
-  line-height: 20px;
-  opacity: 0.9;
+   opacity: 0.9;
 }
 
 p {
@@ -131,7 +125,7 @@ p {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 16px;
+  // line-height: 20px;
   @media #{$small_mobile}{
     font-size: 1.4rem;
 }
@@ -231,14 +225,14 @@ button {
 }
 
 // ************************************* *hero section
-.heroSection {
+.heroSection1 {
   background-image: url("../assets/images/bgImage.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 700px;
+position: relative;
 
-  position: relative;
   @media #{$tab}{
     height: 600px;
     padding: 100px 0;
@@ -259,85 +253,7 @@ button {
     );
     /* Adjust the gradient stops and colors as needed */
   }
-  // mobile menu
-  .mobileMenu {
-    display: none;
-    
-  }
-
-  // desktop menu
-  .menu {
-    background-color: var(--accent-color);
-    position: relative;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    // mainZZZZZ
-    & > ul {
-      display: flex;
-      position: relative;
-      justify-content: space-around;
-
-      & li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        width: 100%;
-        border-right: 1px solid white;
-        padding: 5px 0;
-        background-color: var(--primary-color);
-
-        a {
-          text-transform: uppercase;
-
-          &:hover {
-            color: white;
-          }
-        }
-        &:hover {
-          background-color: var(--accent-color);
-          color: white;
-        }
-        // submenu
-        & ul {
-          position: absolute;
-          top: 28px;
-          width: 100%;
-          display: none;
-          border: 1px solid rgba(0, 0, 0, 0.034);
-
-          & > li {
-            justify-content: start;
-            padding: 5px 10px;
-            padding-right: 15px;
-            &:hover > ul {
-              // Vendor prefixes for broader compatibility
-
-              display: block;
-              left: 100%;
-              top: 0px;
-            }
-          }
-        }
-        &:hover > ul {
-          // Vendor prefixes for broader compatibility
-          // background-color: yellow;
-          display: block;
-        }
-      }
-    }
-    // li{
-    //   border-right: 1px solid #fff;
-    //   background: red;
-    //   width: 100%;
-
-    // }
-    a {
-      font-weight: 600;
-    }
-  }
-
+ 
   // middle content
   .middleContent {
     position: relative;
@@ -440,6 +356,95 @@ button {
       }
     }
   }
+}
+.heroSection {
+  position: sticky;
+  top: 0;
+  left: 0;
+ z-index: 2;
+  // mobile menu
+  .hero{
+    background-color: var(--primary-color);
+  }
+  .mobileMenu {
+    display: none;
+    
+  }
+
+  // desktop menu
+  .menu {
+    background-color: var(--accent-color);
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    // mainZZZZZ
+    & > ul {
+      display: flex;
+      position: relative;
+      justify-content: space-around;
+
+      & li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        border-right: 1px solid white;
+        padding: 5px 0;
+        background-color: var(--primary-color);
+
+        a {
+          text-transform: uppercase;
+
+          &:hover {
+            color: white;
+          }
+        }
+        &:hover {
+          background-color: var(--accent-color);
+          color: white;
+        }
+        // submenu
+        & ul {
+          position: absolute;
+          top: 30px;
+          width: 100%;
+          display: none;
+          border: 1px solid rgba(0, 0, 0, 0.034);
+
+          & > li {
+            justify-content: start;
+            padding: 5px 10px;
+            padding-right: 15px;
+            &:hover > ul {
+              // Vendor prefixes for broader compatibility
+
+              display: block;
+              left: 100%;
+              top: 0px;
+            }
+          }
+        }
+        &:hover > ul {
+          // Vendor prefixes for broader compatibility
+          // background-color: yellow;
+          display: block;
+        }
+      }
+    }
+    // li{
+    //   border-right: 1px solid #fff;
+    //   background: red;
+    //   width: 100%;
+
+    // }
+    a {
+      font-weight: 600;
+    }
+  }
+
+  
 }
 
 // ************************************* *about section
