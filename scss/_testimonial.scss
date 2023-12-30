@@ -1,6 +1,9 @@
 .testimonial{
     margin: 50px 0;
     padding: 50px;
+    @media #{$tab}{
+        padding: 20px;
+      }
      background-color: #F8F9FA;
     //  @media #{$mobile_device} {
     //     margin: 50px 0;
@@ -20,7 +23,9 @@
     h2{
         text-align: center;
      
-    
+        @media #{$small_mobile}{
+            font-size: 3rem;
+        }
     }
     h3{
         text-align: center;
@@ -30,7 +35,9 @@
         padding: 10px;
             margin-top: 80px;
          // background: gray;
-        
+        @media #{$small_mobile}{
+            margin-top: 20px;
+        }
         .innerTes{
             height: 100%;
              display: flex;

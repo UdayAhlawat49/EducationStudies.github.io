@@ -18,9 +18,15 @@ $color_2: #eee;
 		position: relative;
 		border-radius: 5px;
 		padding: 50px;
+		@media #{$tab}{
+			padding: 20px;
+		  }
 		h2 {
  			margin-bottom: 20px;
 			color: black;
+			@media #{$tab}{
+				font-size: 3rem;
+			}
 			span {
 				font-weight: 900;
  				border-bottom: 2px solid;

@@ -12,14 +12,14 @@ html {
   //   font-size: 14px;
   // }
   @media #{$tab} {
-    font-size: 9px;
+    font-size: 9.5px;
   }
   @media #{$small_mobile} {
-    font-size: 8px;
+    font-size: 8.7px;
   }
 
   @media #{$xs_mobile} {
-    font-size: 7.5px;
+    font-size: 8.7px;
   }
 }
 body {
@@ -67,6 +67,12 @@ a {
   color: white;
   font-weight: 700;
   text-decoration: none;
+  @media #{$tab}{
+    font-size: 1.42rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+  }
 }
 // headings
 
@@ -76,6 +82,7 @@ h1 {
   font-style: normal;
   font-weight: 600;
   line-height: calc(47 * 1.6) px;
+ 
 }
 
 h2 {
@@ -84,6 +91,9 @@ h2 {
   font-style: normal;
   font-weight: 600;
   line-height: calc(39 * 1.6) px;
+  @media #{$small_mobile}{
+    font-size: 3rem;
+}
 }
 h3 {
   // color: #fff;
@@ -177,7 +187,7 @@ button {
     color: black;
     display: flex;
     @media #{$small_mobile}{
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 }
@@ -345,7 +355,7 @@ button {
           font-size: 10rem;
         }
         @media #{$small_mobile}{
-          font-size: 8rem;
+          font-size: 6rem;
 
         }
       }
@@ -368,6 +378,12 @@ button {
       text-align: center;
       @media #{$tab}{
         text-align: start;
+      }
+      h6{
+        @media #{$tab}{
+          text-align: start;
+          font-weight: 300;
+        }
       }
     }
 
@@ -423,6 +439,9 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.055);
   padding: 50px;
   background-color: white;
+  @media #{$tab}{
+    padding: 10px;
+  }
   img {
     object-fit: cover;
     width: 100%;
@@ -477,6 +496,9 @@ button {
 .Addsection {
   padding: 100px 0;
   position: relative;
+  @media #{$tab}{
+    padding: 10px;
+  }
   .section-title {
     .text-muted {
       color: #8c98a4 !important;
