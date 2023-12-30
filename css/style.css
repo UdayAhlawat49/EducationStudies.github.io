@@ -363,7 +363,7 @@ i {
 
 a {
   font-size: 1.4rem;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   text-decoration: none;
 }
@@ -707,6 +707,9 @@ button {
     font-weight: 300;
   }
 }
+.heroSection .middleContent .ctaButton {
+  margin: 50px 0;
+}
 @media (max-width: 991px) {
   .heroSection .middleContent .ctaButton {
     margin-top: 100px;
@@ -915,6 +918,20 @@ button {
     line-height: 0 !important;
   }
 }
+.mobileMenu a {
+  color: black;
+}
+.mobileMenu .offcanvas .offcanvas-body {
+  border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+.mobileMenu .offcanvas .offcanvas-body p {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.mobileMenu .offcanvas .btn-close {
+  font-size: 16px;
+}
+
 @media (max-width: 576px) {
   .logo {
     height: 100%;

@@ -64,7 +64,7 @@ i {
 }
 a {
   font-size: 1.4rem;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: 700;
   text-decoration: none;
   @media #{$tab}{
@@ -252,6 +252,7 @@ button {
   // mobile menu
   .mobileMenu {
     display: none;
+    
   }
 
   // desktop menu
@@ -388,6 +389,7 @@ button {
     }
 
     .ctaButton {
+      margin: 50px 0;
         @media #{$tab}{
           margin-top: 100px;
           margin-bottom: 0;
@@ -588,6 +590,8 @@ button {
   .heroSection {
     .mobileMenu {
       display: block;
+    
+ 
     }
   }
 
@@ -596,7 +600,23 @@ button {
   }
 }
 // *************************************************mobile view
-
+.mobileMenu{
+  a{
+    color: black;
+  }
+  .offcanvas {
+   .offcanvas-body{
+    border-top: 1px solid rgba(0, 0, 0, 0.164);
+    p{
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+   }
+    .btn-close{
+      font-size: 16px;
+    }
+  }
+}
 @media (max-width: 576px) {
   
   .logo {
