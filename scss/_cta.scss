@@ -24,9 +24,7 @@ $color_2: #eee;
 		h2 {
  			margin-bottom: 20px;
 			color: black;
-			@media #{$tab}{
-				font-size: 3rem;
-			}
+		
 			span {
 				font-weight: 900;
  				border-bottom: 2px solid;

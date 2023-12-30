@@ -87,27 +87,28 @@ h1 {
 
 h2 {
   // color: #fff;
-  font-size: 3.9rem;
+  font-size: 2.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: calc(39 * 1.6) px;
-  @media #{$small_mobile}{
-    font-size: 3rem;
-}
+ 
 }
 h3 {
   // color: #fff;
-  font-size: 3.3rem;
+  font-size: 2.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: calc(33 * 1.6) px;
+  line-height: 33px;
 }
 h4 {
   // color: #fff;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: calc(27 * 1.6) px;
+  line-height: 25px;
+  @media #{$small_mobile}{
+    font-size: 2rem;
+}
 }
 h5 {
   // color: #fff;
@@ -130,7 +131,10 @@ p {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 300;
-  line-height: calc(23 * 1.6) px;
+  line-height: 16px;
+  @media #{$small_mobile}{
+    font-size: 1.4rem;
+}
 }
 button {
   font-size: 1.6rem;
@@ -473,10 +477,12 @@ button {
       color: #3274f0 !important ;
       line-height: 1.5;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 1.6rem;
       strong {
         color: rgba(0, 0, 0, 0.678);
         font-weight: 700;
+        margin: 0 10px;
+        margin-right: 20px;
       }
     }
     span {
@@ -612,6 +618,9 @@ button {
 
   .accordion-button {
     line-height: 0 !important;
+    &:hover{
+      background-color: inherit;
+    }
   }
 }
 // *************************************************mobile view

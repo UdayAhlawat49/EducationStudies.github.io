@@ -383,29 +383,29 @@ h1 {
 }
 
 h2 {
-  font-size: 3.9rem;
+  font-size: 2.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: 62.4 px;
 }
-@media (max-width: 576px) {
-  h2 {
-    font-size: 3rem;
-  }
-}
 
 h3 {
-  font-size: 3.3rem;
+  font-size: 2.4rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 52.8 px;
+  line-height: 33px;
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 43.2 px;
+  line-height: 25px;
+}
+@media (max-width: 576px) {
+  h4 {
+    font-size: 2rem;
+  }
 }
 
 h5 {
@@ -427,7 +427,12 @@ p {
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 300;
-  line-height: 36.8 px;
+  line-height: 16px;
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 1.4rem;
+  }
 }
 
 button {
@@ -799,11 +804,13 @@ button:hover {
   color: #3274f0 !important;
   line-height: 1.5;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .about .list-unstyled li strong {
   color: rgba(0, 0, 0, 0.678);
   font-weight: 700;
+  margin: 0 10px;
+  margin-right: 20px;
 }
 .about .list-unstyled span {
   color: #3274f0 !important;
@@ -928,6 +935,9 @@ button:hover {
   }
   .accordion-button {
     line-height: 0 !important;
+  }
+  .accordion-button:hover {
+    background-color: inherit;
   }
 }
 .mobileMenu a {
@@ -1225,11 +1235,6 @@ button:hover {
   margin-bottom: 20px;
   color: black;
 }
-@media (max-width: 991px) {
-  .cta .text-content h2 {
-    font-size: 3rem;
-  }
-}
 .cta .text-content h2 span {
   font-weight: 900;
   border-bottom: 2px solid;
@@ -1276,7 +1281,6 @@ button:hover {
 }
 @media (max-width: 576px) {
   .testimonial h2 {
-    font-size: 2.8rem;
     margin: 5px;
   }
 }
@@ -3830,7 +3834,6 @@ button.accordion-button.border-0.bg-white {
   margin: 20px 0;
 }
 .footer .footer_top .footer_widget .logo h2 {
-  font-size: 30px;
   color: white;
   height: 100%;
   margin-left: 20px;
