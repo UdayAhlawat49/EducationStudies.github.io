@@ -19,6 +19,9 @@ button.accordion-button.border-0.bg-white.collapsed {
     padding: 20px!important;
 	font-size: 14px;
 	border: 1px solid rgba(0, 0, 0, 0.185)!important;
+	@media #{$small_mobile}{
+		font-size: 12px;
+	}
 }
 
 
@@ -28,6 +31,9 @@ button.accordion-button.border-0.bg-white {
     padding: 20px!important;
     font-size: 14px;
 	outline: none!important;
+	@media #{$small_mobile}{
+		font-size: 12px;
+	}
 }
 
 .accordion-body.text-muted.bg-white {
@@ -35,6 +41,9 @@ button.accordion-button.border-0.bg-white {
     text-align: left!important;
     padding-right: 32px!important;
     font-size: 14px;
+	@media #{$small_mobile}{
+		font-size: 12px;
+	}
 }
 .accordion-item.rounded.border-0.shadow {
     margin: 10px 0;

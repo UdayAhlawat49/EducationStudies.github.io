@@ -305,12 +305,12 @@ html {
 }
 @media (max-width: 576px) {
   html {
-    font-size: 8.5px;
+    font-size: 8px;
   }
 }
 @media (max-width: 420px) {
   html {
-    font-size: 8px;
+    font-size: 7.5px;
   }
 }
 
@@ -320,17 +320,17 @@ body {
 }
 @media (max-width: 991px) {
   body {
-    font-size: 14px;
+    font-size: 9px;
   }
 }
 @media (max-width: 576px) {
   body {
-    font-size: 14px;
+    font-size: 8.5px;
   }
 }
 @media (max-width: 420px) {
   body {
-    font-size: 14px;
+    font-size: 8px;
   }
 }
 
@@ -399,15 +399,16 @@ h4 {
 h5 {
   font-size: 2.3rem;
   font-style: normal;
-  font-weight: 400;
-  line-height: 36.8 px;
+  font-weight: 300;
+  line-height: 23px;
 }
 
 h6 {
   font-size: 1.8rem;
-  font-style: normal;
+  font-style: 300;
   font-weight: 300;
-  line-height: 36.8 px;
+  line-height: 20px;
+  opacity: 0.9;
 }
 
 p {
@@ -485,6 +486,11 @@ button {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 576px) {
+  .logo span {
+    font-size: 2.5rem;
+  }
+}
 
 .socialContact {
   height: 100%;
@@ -532,8 +538,9 @@ button {
 }
 @media (max-width: 991px) {
   .heroSection {
-    height: 100vh;
+    height: 700px;
     padding: 100px 0;
+    padding-bottom: 0;
   }
 }
 .heroSection::before {
@@ -652,11 +659,21 @@ button {
 }
 .heroSection .middleContent .mainHead {
   font-size: 8rem;
-  font-weight: 600;
 }
 @media (max-width: 991px) {
   .heroSection .middleContent .mainHead h1 {
     font-size: 10rem;
+  }
+}
+@media (max-width: 576px) {
+  .heroSection .middleContent .mainHead h1 {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 991px) {
+  .heroSection .middleContent .mainHead h6 {
+    font-weight: 300;
+    line-height: 18px;
   }
 }
 .heroSection .middleContent .subHead {
@@ -687,6 +704,16 @@ button {
     width: 100%;
     padding: 30px 13px;
     font-size: 3rem;
+  }
+}
+@media (max-width: 576px) {
+  .heroSection .middleContent .ctaButton button {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 100%;
+    width: 100%;
+    padding: 20px 13px;
+    font-size: 2rem;
   }
 }
 .heroSection .middleContent .ctaButton button:last-child {
@@ -843,6 +870,11 @@ button {
         -ms-flex-align: center;
             align-items: center;
     margin-right: 27px;
+    font-size: 30px;
+    width: 100%;
+    font-weight: 800;
+  }
+  .menuIcon i {
     font-size: 30px;
   }
   .menu {
@@ -1268,6 +1300,11 @@ button.accordion-button.border-0.bg-white.collapsed {
   font-size: 14px;
   border: 1px solid rgba(0, 0, 0, 0.185) !important;
 }
+@media (max-width: 576px) {
+  button.accordion-button.border-0.bg-white.collapsed {
+    font-size: 12px;
+  }
+}
 
 button.accordion-button.border-0.bg-white {
   font-weight: 500 !important;
@@ -1276,12 +1313,22 @@ button.accordion-button.border-0.bg-white {
   font-size: 14px;
   outline: none !important;
 }
+@media (max-width: 576px) {
+  button.accordion-button.border-0.bg-white {
+    font-size: 12px;
+  }
+}
 
 .accordion-body.text-muted.bg-white {
   font-weight: 400 !important;
   text-align: left !important;
   padding-right: 32px !important;
   font-size: 14px;
+}
+@media (max-width: 576px) {
+  .accordion-body.text-muted.bg-white {
+    font-size: 12px;
+  }
 }
 
 .accordion-item.rounded.border-0.shadow {
