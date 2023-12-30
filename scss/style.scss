@@ -1,38 +1,28 @@
- @import 'responsive.scss';
+@import "responsive.scss";
 
-  
- 
+@import "index";
 
+@import "service";
 
-@import 'index';
+@import "program";
 
-@import 'service';
+@import "cta";
 
-  @import 'program';
+@import "testimonial";
+@import "faq";
 
- 
-
-@import 'cta';
-
-@import 'testimonial';
-@import 'faq';
-
- 
-
-@import 'course';
-
+@import "course";
 
 // college page
-@import 'collegePage';
+@import "collegePage";
 
 // collegeView page
-@import 'collegeView';
-
+@import "collegeView";
 
 // mietView page
-@import 'mietView';
+@import "mietView";
+// mietView page
+@import "dewanView";
 // about page
- // blog page
- @import 'footer';
-
- 
+// blog page
+@import "footer";
