@@ -298,24 +298,19 @@
 html {
   font-size: 10px;
 }
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 8px;
-  }
-}
 @media (max-width: 991px) {
   html {
-    font-size: 8px;
+    font-size: 9px;
   }
 }
 @media (max-width: 576px) {
   html {
-    font-size: 6px;
+    font-size: 8.5px;
   }
 }
 @media (max-width: 420px) {
   html {
-    font-size: 4px;
+    font-size: 8px;
   }
 }
 
@@ -325,17 +320,17 @@ body {
 }
 @media (max-width: 991px) {
   body {
-    font-size: 8px;
+    font-size: 14px;
   }
 }
 @media (max-width: 576px) {
   body {
-    font-size: 6px;
+    font-size: 14px;
   }
 }
 @media (max-width: 420px) {
   body {
-    font-size: 4px;
+    font-size: 14px;
   }
 }
 
@@ -367,14 +362,14 @@ i {
 }
 
 a {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: white;
   font-weight: 700;
   text-decoration: none;
 }
 
 h1 {
-  font-size: 4.7rem;
+  font-size: 9rem;
   font-style: normal;
   font-weight: 600;
   line-height: 75.2 px;
@@ -395,7 +390,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: 43.2 px;
@@ -409,7 +404,7 @@ h5 {
 }
 
 h6 {
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 300;
   line-height: 36.8 px;
@@ -429,12 +424,12 @@ button {
   text-transform: uppercase;
   padding: 10px 50px;
   letter-spacing: 1px;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   color: #fff;
 }
 
 .topBar {
-  background-color: var(--primary-color);
+  background-color: var(--nutral-color);
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -535,6 +530,12 @@ button {
   height: 690px;
   position: relative;
 }
+@media (max-width: 991px) {
+  .heroSection {
+    height: 100vh;
+    padding: 100px 0;
+  }
+}
 .heroSection::before {
   content: "";
   position: absolute;
@@ -595,7 +596,7 @@ button {
   top: 28px;
   width: 100%;
   display: none;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.034);
 }
 .heroSection .menu > ul li ul > li {
   -webkit-box-pack: start;
@@ -633,6 +634,17 @@ button {
           align-items: center;
   height: 100%;
 }
+@media (max-width: 991px) {
+  .heroSection .middleContent {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    height: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+}
 .heroSection .middleContent .upperHead {
   font-size: 3rem;
   font-weight: 400;
@@ -642,6 +654,11 @@ button {
   font-size: 8rem;
   font-weight: 600;
 }
+@media (max-width: 991px) {
+  .heroSection .middleContent .mainHead h1 {
+    font-size: 10rem;
+  }
+}
 .heroSection .middleContent .subHead {
   font-size: 1.6rem;
   font-weight: 300;
@@ -650,8 +667,27 @@ button {
   letter-spacing: 1px;
   text-align: center;
 }
-.heroSection .middleContent .ctaButton {
-  margin-top: 30px;
+@media (max-width: 991px) {
+  .heroSection .middleContent .subHead {
+    text-align: start;
+  }
+}
+@media (max-width: 991px) {
+  .heroSection .middleContent .ctaButton {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .heroSection .middleContent .ctaButton button {
+    margin-top: 100px;
+    margin-bottom: 0;
+    width: 100%;
+    width: 100%;
+    padding: 30px 13px;
+    font-size: 3rem;
+  }
 }
 .heroSection .middleContent .ctaButton button:last-child {
   font-size: 1.6rem;
@@ -664,6 +700,11 @@ button {
   color: white;
   border: 1px solid white;
   margin-left: 5px;
+}
+@media (max-width: 991px) {
+  .heroSection .middleContent .ctaButton button:last-child {
+    display: none;
+  }
 }
 
 .about {
@@ -765,9 +806,6 @@ button {
 }
 
 @media (max-width: 992px) {
-  html {
-    font-size: 8px;
-  }
   .logo {
     height: 100%;
   }
@@ -777,9 +815,6 @@ button {
 }
 @media (max-width: 768px) {
   /* Your styles for extra large screens go here */
-  html {
-    font-size: 6px;
-  }
   .logo {
     height: 100%;
   }
@@ -821,9 +856,6 @@ button {
   }
 }
 @media (max-width: 576px) {
-  html {
-    font-size: 5px;
-  }
   .logo {
     height: 100%;
   }
@@ -836,7 +868,7 @@ button {
   padding-bottom: 20px;
 }
 .service_area .single_service {
-  background: #ebb830;
+  background: var(--primary-color);
   border-radius: 0;
   padding: 10px;
   margin-bottom: 30px;
@@ -872,13 +904,13 @@ button {
   color: #fff;
 }
 .service_area .col-lg-4:nth-child(2) .single_service {
-  background: #317bd6;
+  background: var(--nutral-color);
 }
 .service_area .col-lg-4:nth-child(2) .single_service .icon i {
   color: #317bd6;
 }
 .service_area .col-lg-4:nth-child(3) .single_service {
-  background: #1fc2d9;
+  background: var(--secondary-color);
 }
 .service_area .icon i {
   color: #000000;
@@ -1130,6 +1162,8 @@ button {
 }
 
 .testimonial {
+  margin: 50px 0;
+  padding: 50px;
   background-color: #F8F9FA;
 }
 .testimonial h2 {
@@ -1814,13 +1848,6 @@ button.accordion-button.border-0.bg-white {
   height: 110px;
 }
 
-.heroSection {
-  background-image: url(../assets/images/bgImage.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 620px;
-}
 .heroSection .menu {
   z-index: 3;
 }

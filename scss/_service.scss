@@ -2,7 +2,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     .single_service{
-        background: #ebb830;
+        background: var(--primary-color);
          @include border-radius(0);
          padding:10px;
          margin-bottom: 30px;
@@ -40,7 +40,8 @@
         }
     }
     .col-lg-4:nth-child(2) .single_service{
-        background: #317bd6;
+        background:var(  --nutral-color );
+
         .icon{
             i{
                 color: #317bd6;
@@ -48,7 +49,7 @@
         }
     }
     .col-lg-4:nth-child(3) .single_service{
-        background: #1fc2d9;
+        background:var(  --secondary-color );
       
     }
       .icon{

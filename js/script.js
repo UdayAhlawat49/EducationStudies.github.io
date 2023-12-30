@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
         menu.style.width = "100%";
       } else {
         // If no, reset the position to the default
-        menu.style.position = "static";
+        menu.style.position = "relative";
       }
     };
   });

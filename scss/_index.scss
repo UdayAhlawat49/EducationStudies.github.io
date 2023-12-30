@@ -8,32 +8,32 @@
 }
 html {
   font-size: 10px;
-  @media screen and (max-width: 768px) {
-    font-size: 8px;
-  }
+  // @media screen and (max-width: 768px) {
+  //   font-size: 14px;
+  // }
   @media #{$tab} {
-    font-size: 8px;
+    font-size: 9px;
   }
   @media #{$small_mobile} {
-    font-size: 6px;
+    font-size: 8.5px;
   }
 
   @media #{$xs_mobile} {
-    font-size: 4px;
+    font-size: 8px;
   }
 }
 body {
   font-size: 10px;
   font-family: "Poppins", sans-serif;
   @media #{$tab} {
-    font-size: 8px;
+    font-size: 14px;
   }
   @media #{$small_mobile} {
-    font-size: 6px;
+    font-size: 14px;
   }
 
   @media #{$xs_mobile} {
-    font-size: 4px;
+    font-size: 14px;
   }
 }
 
@@ -58,12 +58,12 @@ span {
 }
 i {
   font-size: 1.6rem;
- 
+
   font-weight: 500;
   text-decoration: none;
 }
 a {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: white;
   font-weight: 700;
   text-decoration: none;
@@ -72,7 +72,7 @@ a {
 
 h1 {
   // color: #fff;
-  font-size: 4.7rem;
+  font-size: 9rem;
   font-style: normal;
   font-weight: 600;
   line-height: calc(47 * 1.6) px;
@@ -94,7 +94,7 @@ h3 {
 }
 h4 {
   // color: #fff;
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 600;
   line-height: calc(27 * 1.6) px;
@@ -108,7 +108,7 @@ h5 {
 }
 h6 {
   // color: #fff;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 300;
   line-height: calc(23 * 1.6) px;
@@ -121,14 +121,14 @@ p {
   font-weight: 300;
   line-height: calc(23 * 1.6) px;
 }
-button{
+button {
   font-size: 1.8rem;
   font-weight: 600;
   border: none;
   text-transform: uppercase;
   padding: 10px 50px;
   letter-spacing: 1px;
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   color: #fff;
 }
 
@@ -137,7 +137,7 @@ button{
 
 // ****************************************  topBar
 .topBar {
-  background-color: var(--primary-color);
+  background-color: var(--nutral-color);
   height: 100%;
   display: flex;
   align-items: center;
@@ -155,7 +155,6 @@ button{
       span {
         margin: 0 10px;
       }
-      
     }
   }
   & .socialIcons {
@@ -195,7 +194,6 @@ button{
       display: flex;
       font-weight: 800;
       margin: 0 10px;
-     
     }
   }
   & > button {
@@ -217,6 +215,10 @@ button{
   height: 690px;
 
   position: relative;
+  @media #{$tab}{
+    height: 100vh;
+    padding: 100px 0;
+  }
 
   &::before {
     content: "";
@@ -261,9 +263,8 @@ button{
         background-color: var(--primary-color);
 
         a {
-          
           text-transform: uppercase;
-        
+
           &:hover {
             color: white;
           }
@@ -278,7 +279,7 @@ button{
           top: 28px;
           width: 100%;
           display: none;
-          border: 1px solid black;
+          border: 1px solid rgba(0, 0, 0, 0.034);
 
           & > li {
             justify-content: start;
@@ -321,7 +322,12 @@ button{
     justify-content: center;
     align-items: center;
     height: 100%;
+    @media #{$tab} {
+      justify-content: flex-end;
 
+      height: 100%;
+      align-items: start;
+    }
     .upperHead {
       font-size: 3rem;
       font-weight: 400;
@@ -330,6 +336,11 @@ button{
     .mainHead {
       font-size: 8rem;
       font-weight: 600;
+      h1{
+        @media #{$tab}{
+          font-size: 10rem;
+        }
+      }
     }
     .subHead {
       font-size: 1.6rem;
@@ -338,12 +349,27 @@ button{
       font-style: normal;
       letter-spacing: 1px;
       text-align: center;
+      @media #{$tab}{
+        text-align: start;
+      }
     }
 
     .ctaButton {
-      margin-top: 30px;
-
-    
+        @media #{$tab}{
+          margin-top: 100px;
+          margin-bottom: 0;
+          width: 100%;
+        }
+        button{
+          @media #{$tab}{
+            margin-top: 100px;
+            margin-bottom: 0;
+            width: 100%;
+            width: 100%;
+            padding:30px  13px;
+            font-size: 3rem;
+          }
+        }
       button:last-child {
         font-size: 1.6rem;
         font-weight: 400;
@@ -355,6 +381,9 @@ button{
         color: white;
         border: 1px solid white;
         margin-left: 5px;
+        @media #{$tab}{
+          display: none;
+        }
       }
     }
   }
@@ -362,7 +391,6 @@ button{
 
 // ************************************* *about section
 .about {
- 
   position: relative;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -376,17 +404,15 @@ button{
     height: 100%;
   }
   .section-title {
- 
     padding-top: 0;
   }
   .title {
-   
     text-transform: uppercase;
   }
   .para-desc {
     max-width: 600px;
     color: #8c98a4 !important;
-  font-weight: 300;
+    font-weight: 300;
   }
   .list-unstyled {
     padding-left: 0;
@@ -403,9 +429,6 @@ button{
     }
     span {
       color: #3274f0 !important ;
-   
-   
-   
     }
   }
   .buttonAbout {
@@ -430,8 +453,6 @@ button{
   padding: 100px 0;
   position: relative;
   .section-title {
-   
-  
     .text-muted {
       color: #8c98a4 !important;
       font-weight: 400;
@@ -447,10 +468,10 @@ button{
       justify-content: center;
       flex-direction: column;
       a {
-         font-weight: 600;
+        font-weight: 600;
       }
       p {
-         font-weight: 400;
+        font-weight: 400;
       }
     }
   }
@@ -469,9 +490,7 @@ button{
 
 //*********************************************** large view
 @media (max-width: 992px) {
-  html {
-    font-size: 8px;
-  }
+ 
   .logo {
     height: 100%;
     img {
@@ -482,9 +501,7 @@ button{
 // *************************************************tablet view
 @media (max-width: 768px) {
   /* Your styles for extra large screens go here */
-  html {
-    font-size: 6px;
-  }
+ 
   .logo {
     height: 100%;
     img {
@@ -529,9 +546,7 @@ button{
 // *************************************************mobile view
 
 @media (max-width: 576px) {
-  html {
-    font-size: 5px;
-  }
+  
   .logo {
     height: 100%;
     img {
