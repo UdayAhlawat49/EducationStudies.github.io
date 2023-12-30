@@ -548,7 +548,7 @@ button:hover {
 }
 
 .Addsection {
-  padding: 100px 0;
+  padding: 0;
   position: relative;
 }
 @media (max-width: 991px) {
@@ -987,7 +987,7 @@ button:hover {
   padding-bottom: 80px;
 }
 .faqs .section-title .text-muted {
-  color: #8c98a4 !important;
+  color: #000000 !important;
 }
 .faqs .section-title .accordion-button {
   font-weight: 500 !important;
@@ -999,12 +999,12 @@ button.accordion-button.border-0.bg-white.collapsed {
   font-weight: 500 !important;
   text-align: left !important;
   padding: 20px !important;
-  font-size: 14px;
+  font-size: 16px;
   border: 1px solid rgba(0, 0, 0, 0.185) !important;
 }
 @media (max-width: 576px) {
   button.accordion-button.border-0.bg-white.collapsed {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -1012,12 +1012,12 @@ button.accordion-button.border-0.bg-white {
   font-weight: 500 !important;
   text-align: left !important;
   padding: 20px !important;
-  font-size: 14px;
+  font-size: 16px;
   outline: none !important;
 }
 @media (max-width: 576px) {
   button.accordion-button.border-0.bg-white {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
@@ -1025,11 +1025,11 @@ button.accordion-button.border-0.bg-white {
   font-weight: 400 !important;
   text-align: left !important;
   padding-right: 32px !important;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media (max-width: 576px) {
   .accordion-body.text-muted.bg-white {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
