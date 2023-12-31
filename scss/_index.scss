@@ -101,11 +101,19 @@ h1 {
 h2 {
   font-size:6rem;
   letter-spacing: -.5px;
+  text-transform: uppercase;
+  @media #{$small_mobile}{
+    font-size: 3rem;
+  }
  }
 
 h3 {
   font-size: 4.8rem;
    letter-spacing: 0;
+   text-transform: uppercase;
+   @media #{$small_mobile}{
+    font-size: 4rem;
+  }
 }
 
 h4 {
@@ -542,7 +550,7 @@ position: relative;
     }
   }
   .buttonAbout {
-    margin: 50px 0;
+    margin:   0;
     .ReadMoreBtn {
       background: #234262;
       padding: 13px 60px;
@@ -572,14 +580,20 @@ position: relative;
     }
   }
   .features {
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    background-color: white;
     i {
       font-size: 30px;
       margin: 0 10px;
+      color: var(--accent-color);
     }
     .content {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      h6{
+        color: var(--nutral-color);
+      }
      
     }
   }

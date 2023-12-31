@@ -21,10 +21,15 @@
                 align-items: center;
                margin: 20px 0;
                 h2{
-                     color: white;
-                    height: 100%;
-
-                    margin-left: 20px;
+                    color: #fff;
+    height: 100%;
+    font-size: 38px;
+    margin-left: 20px;
+    font-weight: 800;
+    @media #{$small_mobile}{
+        font-size: 20px;
+    }
+}
                 }
             }
             @media #{$mobile_device} {
@@ -234,7 +239,6 @@
             }
         }
     }
-}
 
 .copyright{
     color: white;

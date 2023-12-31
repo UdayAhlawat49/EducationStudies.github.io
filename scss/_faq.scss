@@ -1,6 +1,6 @@
 .faqs{
 	padding: 10px;
-	padding-bottom: 80px;
+	padding-bottom: 30px;
 	.section-title{
 	  
 		.text-muted {
@@ -16,7 +16,7 @@
 button.accordion-button.border-0.bg-white.collapsed {
     font-weight: 500!important;
     text-align: left!important;
-    padding: 20px!important;
+    // padding: 20px!important;
 	font-size: 16px;
 	border: 1px solid rgba(0, 0, 0, 0.185)!important;
 	@media #{$small_mobile}{
@@ -28,7 +28,7 @@ button.accordion-button.border-0.bg-white.collapsed {
 button.accordion-button.border-0.bg-white {
     font-weight: 500!important;
     text-align: left!important;
-    padding: 20px!important;
+    // padding: 20px!important;
     font-size: 16px;
 	outline: none!important;
 	@media #{$small_mobile}{
@@ -39,7 +39,6 @@ button.accordion-button.border-0.bg-white {
 .accordion-body.text-muted.bg-white {
     font-weight: 400!important;
     text-align: left!important;
-    padding-right: 32px!important;
     font-size: 16px;
 	@media #{$small_mobile}{
 		font-size: 16px;

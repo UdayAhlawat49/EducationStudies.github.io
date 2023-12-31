@@ -1,0 +1,131 @@
+.footer1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      padding: 10px;
+      a {
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.innerContent {
+  position: relative;
+  top: 58px;
+  height: 100vh;
+  bottom: 100px;
+  overflow-y: auto;
+  p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  h6 {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .Banner {
+    width: 100%;
+    .carousel-item {
+      padding: 10px;
+    }
+  }
+
+  .colleges {
+    position: relative;
+    h6 {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+    .collegesCat {
+      margin: auto;
+
+      border-radius: 10px;
+      text-align: center;
+      a {
+        display: block;
+        padding: 10px 0px;
+        color: black;
+        img {
+          width: 40px;
+
+          object-fit: contain;
+        }
+        p {
+          margin: 5px 0;
+          font-size: 1.2rem;
+          color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  .recentCollegList {
+    .recentColleges {
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      height: max-content;
+      .recentColleges_collegeView {
+        height: max-content;
+        margin: 5px;
+        border: 1px solid #0000002e;
+        padding: 5px;
+
+        p {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          -webkit-line-clamp: 2; /* Limit to two lines */
+          white-space: normal; /* Allow wrapping within the lines */
+
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        img {
+          width: 150px;
+        
+        }
+      }
+    }
+  }
+
+  .studyAbroad{
+
+     .studyAbroad_card{
+        background: rgb(47,32,125);
+        background: radial-gradient(circle, rgba(47,32,125,0.6923144257703081) 0%, rgba(47,32,125,0.7511379551820728) 34%, rgba(47,32,125,1) 100%);
+        border-radius: 20px;
+        padding: 20px;
+        h5{
+            color: white;
+        }
+        p{
+            color: white;
+            font-weight: 100;
+    letter-spacing: .5px;
+        }
+        button{
+            font-size: 1.2rem;
+              padding:  10px 30px;
+            border: 1px solid white;
+            background-color: transparent;
+         
+            margin-left: auto;
+        }
+    }
+  }
+}
+::-webkit-scrollbar {
+    width: 0.1em; /* Set the width to a very small value */
+}
+
