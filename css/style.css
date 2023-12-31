@@ -760,6 +760,7 @@ button:hover {
     z-index: 2;
     background-color: white;
     width: 100%;
+    left: 0;
   }
   .menuIcon {
     height: 100%;
@@ -2667,9 +2668,6 @@ button.accordion-button.border-0.bg-white {
 .innerContent {
   position: relative;
   top: 58px;
-  height: 100vh;
-  bottom: 100px;
-  overflow-y: auto;
 }
 .innerContent p {
   font-size: 1.2rem;
