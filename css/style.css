@@ -2727,7 +2727,8 @@ button.accordion-button.border-0.bg-white {
   height: max-content;
   margin: 5px;
   border: 1px solid rgba(0, 0, 0, 0.1803921569);
-  padding: 5px;
+  border-radius: 10px;
+  padding: 0;
 }
 .innerContent .recentCollegList .recentColleges .recentColleges_collegeView p {
   display: -webkit-box;
@@ -2737,9 +2738,12 @@ button.accordion-button.border-0.bg-white {
   white-space: normal; /* Allow wrapping within the lines */
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 400;
+  padding: 9px 8px 20px;
 }
 .innerContent .recentCollegList .recentColleges .recentColleges_collegeView img {
   width: 150px;
+  border-radius: 10px;
 }
 .innerContent .studyAbroad .studyAbroad_card {
   background: rgb(47, 32, 125);
