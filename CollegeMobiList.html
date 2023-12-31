@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap v 5.2 -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+
+    <!-- owl Crousel -->
+    <link rel="stylesheet" href="./css/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="./css/owl/owl.theme.green.min.css" />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+
+ 
+    <title>Education Studeis</title>
+  </head>
+  <body>
+    <!-- logo -->
+    <div class="container-fluid">
+      <!-- Navigation -->
+      <div class="row navigation p-2 px-5">
+        <div class="col-10 col-lg-7 col-md-8">
+          <div class="logo">
+            <img
+              width="60"
+              src="./assets/images/LOGO.png"
+              alt="Educaiton Studies"
+              class="img-fluid"
+            />
+
+            <span class="ms-3">EDUCATION STUDIES</span>
+          </div>
+        </div>
+        <div class="col-2 col-lg-5 col-md-4">
+          <!-- social contact-->
+          <div class="socialContact">
+            <ul>
+              <li>
+                <a>HOME</a>
+              </li>
+              <li>
+                <a>ABOUT</a>
+              </li>
+              <li>
+                <a>BLOG</a>
+              </li>
+              <li>
+                <a>CONTACT</a>
+              </li>
+            </ul>
+            <!-- <div class="Appointment" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <div class="book_btn d-none d-lg-block">
+                      <a data-scroll-nav="1" href="#">Apply NOw</a>
+                  </div>
+              </div> -->
+          </div>
+
+          <!-- mobile menu -->
+          <div class="mobileMenu">
+            <!-- hero section -->
+
+            <div
+              data-bs-toggle="offcanvas"
+              href="#offcanvasExample"
+              role="button"
+              aria-controls="offcanvasExample"
+            >
+              <!-- hamburgur icons -->
+              <div class="menuIcon d-blcok d-md-none">
+                <div class="hamBurger">
+                  <i class="bi bi-list"></i>
+                </div>
+              </div>
+            </div>
+            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+         Button with data-bs-target
+       </button>
+        -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  <div class="logo">
+                    <img
+                      width="60"
+                      src="./assets/images/LOGO.png"
+                      alt="Educaiton Studies"
+                      class="img-fluid"
+                    />
+
+                    <span class="ms-3">EDUCATION STUDIES</span>
+                  </div>
+                </h5>
+                <div
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></div>
+              </div>
+              <div class="offcanvas-body">
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  <!-- Accordion Item #1 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                      <div
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        <!-- <p>Accordion Item #1</p> -->
+                        <p>Colleges</p>
+                      </div>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="flush-headingOne"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        <!-- Nested Accordion Level 1 -->
+                        <div
+                          class="accordion accordion-flush"
+                          id="nestedAccordionLevel1"
+                        >
+                          <!-- Nested Accordion Level 1, Item #1 -->
+                          <div class="accordion-item">
+                            <h2
+                              class="accordion-header"
+                              id="nested-headingOneLevel1"
+                            >
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#nested-collapseOneLevel1"
+                                aria-expanded="false"
+                                aria-controls="nested-collapseOneLevel1"
+                              >
+                                <!-- Nested Accordion Level 1, Item #1 -->
+                                <p>Engineering</p>
+                              </button>
+                            </h2>
+                            <div
+                              id="nested-collapseOneLevel1"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="nested-headingOneLevel1"
+                              data-bs-parent="#nestedAccordionLevel1"
+                            >
+                              <div class="accordion-body">
+                                <!-- Content for Nested Accordion Level 1, Item #1 -->
+                                <a href="./College.html"><p>Top Colleges</p></a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Nested Accordion Level 1, Item #2 -->
+                          <div class="accordion-item">
+                            <h2
+                              class="accordion-header"
+                              id="nested-headingTwoLevel1"
+                            >
+                              <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#nested-collapseTwoLevel1"
+                                aria-expanded="false"
+                                aria-controls="nested-collapseTwoLevel1"
+                              >
+                                <!-- Nested Accordion Level 1, Item #2 -->
+                                <p>Medical</p>
+                              </button>
+                            </h2>
+                            <div
+                              id="nested-collapseTwoLevel1"
+                              class="accordion-collapse collapse"
+                              aria-labelledby="nested-headingTwoLevel1"
+                              data-bs-parent="#nestedAccordionLevel1"
+                            >
+                              <div class="accordion-body">
+                                <!-- Content for Nested Accordion Level 1, Item #2 -->
+                                <a href="#"><p>Top Colleges</p></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Nested Accordion Level 1 -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Accordion Item #1 -->
+                </div>
+              </div>
+              <div class="row">
+                <div class="col mx-md-5">
+                  <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li>
+                      <label for="subMenu_1_check" href="#">Home +</label>
+
+                      <input id="subMenu_1_check" type="checkbox" />
+                      <ul class="subMenu_1">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li>
+                          <label for="subMenu_2_check" href="#">Home +</label>
+                          <input id="subMenu_2_check" type="checkbox" />
+                          <ul class="subMenu_2">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li>
+                              <a href="#">Home +</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="innerContent">
+      <div class="Banner  ">
+           
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+      
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/images/7958341-removebg-preview (1).png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/7958341-removebg-preview (1).png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/images/7958341-removebg-preview (1).png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+           
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="CollegeMobileList">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            
+             
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+          
+    <!-- scripts -->
+    <!-- jquery -->
+    <script src="./js/vendor//jquery-3.7.1.min.js"></script>
+    <!-- bootstrap v5.2 -->
+    <script src="./js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- owl crousel -->
+    <script src="./js/vendor/owl.carousel.min.js"></script>
+    <!-- isotope -->
+    <script src="./js/vendor/isotope.pkgd.min.js"></script>
+
+ 
+    <!-- custom js -->
+    <script src="./js/script.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -2732,6 +2732,12 @@ button.accordion-button.border-0.bg-white {
   border: 1px solid rgba(0, 0, 0, 0.1803921569);
   border-radius: 10px;
   padding: 0;
+  padding-bottom: 14px;
+}
+.innerContent .recentCollegList .recentColleges .recentColleges_collegeView button {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-left: 11px;
 }
 .innerContent .recentCollegList .recentColleges .recentColleges_collegeView p {
   display: -webkit-box;
