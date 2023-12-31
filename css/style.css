@@ -2667,7 +2667,7 @@ button.accordion-button.border-0.bg-white {
 
 .innerContent {
   position: relative;
-  top: 58px;
+  top: 75px;
 }
 .innerContent p {
   font-size: 1.2rem;
@@ -2682,7 +2682,10 @@ button.accordion-button.border-0.bg-white {
   width: 100%;
 }
 .innerContent .Banner .carousel-item {
-  padding: 10px;
+  border-radius: 10px;
+}
+.innerContent .Banner .carousel-inner {
+  border-radius: 10px;
 }
 .innerContent .colleges {
   position: relative;
@@ -2725,7 +2728,7 @@ button.accordion-button.border-0.bg-white {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin: 5px;
+  margin: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1803921569);
   border-radius: 10px;
   padding: 0;
@@ -2738,11 +2741,15 @@ button.accordion-button.border-0.bg-white {
   white-space: normal; /* Allow wrapping within the lines */
   overflow: hidden;
   text-overflow: ellipsis;
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 1.6rem;
   padding: 9px 8px 20px;
 }
 .innerContent .recentCollegList .recentColleges .recentColleges_collegeView img {
-  width: 150px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
   border-radius: 10px;
 }
 .innerContent .studyAbroad .studyAbroad_card {

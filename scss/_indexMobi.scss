@@ -20,7 +20,7 @@
 
 .innerContent {
   position: relative;
-  top: 58px;
+  top: 75px;
   
   p {
     font-size: 1.2rem;
@@ -34,7 +34,10 @@
   .Banner {
     width: 100%;
     .carousel-item {
-      padding: 10px;
+    border-radius: 10px;
+    }
+    .carousel-inner {
+        border-radius: 10px;
     }
   }
 
@@ -75,7 +78,7 @@
       height: max-content;
       .recentColleges_collegeView {
         height: max-content;
-        margin: 5px;
+        margin: 10px;
         border: 1px solid #0000002e;
         border-radius: 10px;
         padding: 0;
@@ -90,14 +93,16 @@
           overflow: hidden;
           text-overflow: ellipsis;
           
-            font-weight: 400;
-
+            font-weight: 500;
+            font-size: 1.6rem;
           padding: 9px 8px 20px;
 
         }
         img {
-          width: 150px;
-          border-radius: 10px;
+            width: 200px;
+            object-fit: cover;
+            height: 150px;
+            border-radius: 10px;
 
         }
       }
