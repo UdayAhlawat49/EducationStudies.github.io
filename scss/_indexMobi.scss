@@ -22,13 +22,15 @@
   position: relative;
   top: 75px;
   
-
+  background-color: #F7F7F7;
   //   ===================================  homePage 
   p {
     font-size: 1.2rem;
     font-weight: 600;
+    color :  black;
     word-wrap: break-word;
   }
+  a{color: black;}
   h6 {
     font-size: 1.6rem;
     font-weight: 700;
@@ -89,8 +91,9 @@
             margin: 0;
     font-size: 1.2rem;
     margin-left: 11px;
+    padding: 5px 10px;
         }
-        p {
+       & > p {
           display: -webkit-box;
           -webkit-box-orient: vertical;
           overflow: hidden;
@@ -142,7 +145,110 @@
     }
   }
   //   ===================================  CollegeMobileList
+  .CollegeMobileList {
+    .CollegeMobileList_filter{
+ 
+      display: flex;
+      overflow-x: auto;
+      overflow-y: hidden;
+      height: -webkit-max-content;
+      height: -moz-max-content;
+      height: max-content;
+     .CollegeMobileList_filterList {
+      height: max-content;
+      border: 1px solid rgba(0, 0, 0, 0.116);
+      text-align: center;
+      margin: 0 5px;
+      background-color: #F7F7F7;
+      p{display: block;
+        white-space: nowrap;
+        line-height: 30px;
+        padding: 0 10px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        i{
+          font-size: 1.2rem;
+        }
+      }
+    }
    
+  }
+  .CollegeMobileList_list{
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    padding: 20px ;
+    background-color: white;
+    border-radius: 10px;
+    .CollegeMobileList_listData{
+
+     .image{
+      
+      height: 100px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+     }
+      .CollegeMobileList_data{
+        height: 100%;
+         
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h6{
+          overflow: hidden;
+          
+          max-width: 90%;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+
+        }
+        ul{
+       
+          li{
+            display: flex;
+            margin: 5px 0;
+            button{
+              font-size: 1.2rem;
+              padding: 2px;
+            }
+            
+          }
+     
+        }
+        i{
+          color: yellow;
+        }
+        .bi-geo-alt-fill{
+          color: black;
+        }
+       
+      }
+      .callNow {
+        button{
+          background-color: var(--primary-color);
+          padding: 10px ;
+          margin: 0;
+          width: 100%;
+          font-size: 1.4rem;
+        }
+      }
+      .Enquiry {
+        button{
+          background-color:transparent;
+          border: 1px solid #2f207d;
+          padding: 10px ;
+          color: black;
+          margin: 0;
+          width: 100%;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+  }
+  
 
 }
 ::-webkit-scrollbar {

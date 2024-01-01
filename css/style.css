@@ -2668,11 +2668,16 @@ button.accordion-button.border-0.bg-white {
 .innerContent {
   position: relative;
   top: 75px;
+  background-color: #F7F7F7;
 }
 .innerContent p {
   font-size: 1.2rem;
   font-weight: 600;
+  color: black;
   word-wrap: break-word;
+}
+.innerContent a {
+  color: black;
 }
 .innerContent h6 {
   font-size: 1.6rem;
@@ -2738,8 +2743,9 @@ button.accordion-button.border-0.bg-white {
   margin: 0;
   font-size: 1.2rem;
   margin-left: 11px;
+  padding: 5px 10px;
 }
-.innerContent .recentCollegList .recentColleges .recentColleges_collegeView p {
+.innerContent .recentCollegList .recentColleges .recentColleges_collegeView > p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -2778,6 +2784,105 @@ button.accordion-button.border-0.bg-white {
   border: 1px solid white;
   background-color: transparent;
   margin-left: auto;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_filter .CollegeMobileList_filterList {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  text-align: center;
+  margin: 0 5px;
+  background-color: #F7F7F7;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_filter .CollegeMobileList_filterList p {
+  display: block;
+  white-space: nowrap;
+  line-height: 30px;
+  padding: 0 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_filter .CollegeMobileList_filterList p i {
+  font-size: 1.2rem;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list {
+  border: 1px solid rgba(0, 0, 0, 0.062);
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .image {
+  height: 100px;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .CollegeMobileList_data {
+  height: 100%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .CollegeMobileList_data h6 {
+  overflow: hidden;
+  max-width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .CollegeMobileList_data ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .CollegeMobileList_data ul li button {
+  font-size: 1.2rem;
+  padding: 2px;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .CollegeMobileList_data i {
+  color: yellow;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .CollegeMobileList_data .bi-geo-alt-fill {
+  color: black;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .callNow button {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  font-size: 1.4rem;
+}
+.innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .Enquiry button {
+  background-color: transparent;
+  border: 1px solid #2f207d;
+  padding: 10px;
+  color: black;
+  margin: 0;
+  width: 100%;
+  font-size: 1.4rem;
 }
 
 ::-webkit-scrollbar {
