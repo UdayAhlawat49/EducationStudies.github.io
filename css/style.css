@@ -2736,6 +2736,7 @@ button.accordion-button.border-0.bg-white {
   margin: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1803921569);
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.2196078431);
   padding: 0;
   padding-bottom: 14px;
 }
@@ -2863,7 +2864,7 @@ button.accordion-button.border-0.bg-white {
   padding: 2px;
 }
 .innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .CollegeMobileList_data i {
-  color: yellow;
+  color: var(--accent-color);
 }
 .innerContent .CollegeMobileList .CollegeMobileList_list .CollegeMobileList_listData .CollegeMobileList_data .bi-geo-alt-fill {
   color: black;
