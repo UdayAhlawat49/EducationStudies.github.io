@@ -98,7 +98,7 @@ h1 {
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 2.9rem;
   letter-spacing: -0.5px;
   text-transform: uppercase;
 }
@@ -109,7 +109,7 @@ h2 {
 }
 
 h3 {
-  font-size: 4.8rem;
+  font-size: 2.5rem;
   letter-spacing: 0;
   text-transform: uppercase;
 }
@@ -120,17 +120,17 @@ h3 {
 }
 
 h4 {
-  font-size: 3.4rem;
+  font-size: 2rem;
   letter-spacing: 0.25px;
 }
 
 h5 {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   letter-spacing: 0;
 }
 
 h6 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   letter-spacing: 0.15px;
 }
 
@@ -1845,6 +1845,12 @@ button.accordion-button.border-0.bg-white {
 .mietViewPage {
   margin-top: 30px;
 }
+@media (max-width: 991px) {
+  .mietViewPage {
+    padding: 15px;
+    margin-top: 50px;
+  }
+}
 .mietViewPage .collegeViewImage {
   display: block;
   width: 100%;
@@ -1852,11 +1858,23 @@ button.accordion-button.border-0.bg-white {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.123);
 }
+@media (max-width: 991px) {
+  .mietViewPage .collegeViewImage {
+    padding: 0;
+    border-radius: 10px;
+  }
+}
 .mietViewPage .collegeViewImage img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   height: 100%;
+}
+@media (max-width: 991px) {
+  .mietViewPage .collegeViewImage img {
+    padding: 0;
+    border-radius: 10px;
+  }
 }
 .mietViewPage .collgeViewHeading {
   padding: 30px 50px;
@@ -1873,6 +1891,16 @@ button.accordion-button.border-0.bg-white {
   background-color: white;
   margin: -15px;
 }
+@media (max-width: 991px) {
+  .mietViewPage .collgeViewHeading {
+    padding: 0;
+    margin: 10px 0 0;
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+  }
+}
 .mietViewPage .collgeViewHeading .collegeViewMainHead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1884,19 +1912,22 @@ button.accordion-button.border-0.bg-white {
 .mietViewPage .collgeViewHeading .collegeViewMainHead .collegeLogo {
   margin: 0 10px;
 }
-.mietViewPage .collgeViewHeading .collegeViewMainHead .subheading h2 {
-  font-size: 5rem;
-  font-weight: 600;
-  line-height: 50px;
+@media (max-width: 991px) {
+  .mietViewPage .collgeViewHeading .collegeViewMainHead .collegeLogo {
+    display: none;
+  }
 }
-.mietViewPage .collgeViewHeading .collegeViewMainHead .subheading p {
-  font-size: 1rem;
-  letter-spacing: 1.2px;
-  font-weight: 400;
+.mietViewPage .collgeViewHeading .collegeViewMainHead .subheading h2 {
+  text-transform: capitalize;
+}
+@media (max-width: 991px) {
+  .mietViewPage .collgeViewHeading .collegeViewMainHead .subheading p {
+    display: none;
+  }
 }
 .mietViewPage .CVmiddleContent {
   color: black;
-  padding: 0 30px;
+  padding: 0;
 }
 .mietViewPage .CVmiddleContent ul {
   display: -webkit-box;
@@ -1906,25 +1937,66 @@ button.accordion-button.border-0.bg-white {
       -ms-flex-pack: start;
           justify-content: start;
 }
+@media (max-width: 991px) {
+  .mietViewPage .CVmiddleContent ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .mietViewPage .CVmiddleContent ul li {
   margin: 0 10px;
 }
-.mietViewPage .CVmiddleContent ul li span {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.mietViewPage .collegeViewBtn {
+.mietViewPage .CVmiddleContent ul li .term {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.mietViewPage .collegeViewBtn .call span {
-  padding: 10px 15px;
-  background-color: #f37921;
-  margin: 5px;
-  color: white;
+.mietViewPage .CVmiddleContent ul li .rating span:first-child {
+  border: 1px solid rgba(0, 0, 0, 0.116);
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #E8E3E8;
+  margin: 0;
+}
+.mietViewPage .CVmiddleContent ul li .rating span:last-child {
+  color: black;
   font-weight: 600;
-  font-size: 16px;
+}
+@media (max-width: 991px) {
+  .mietViewPage .CVmiddleContent ul li {
+    margin: 1px 5px;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+}
+.mietViewPage .CVmiddleContent ul li .rating {
+  color: rgb(255, 110, 0);
+}
+.mietViewPage .CVmiddleContent ul li span {
+  font-size: 1.2rem;
+  margin: 0 5px;
+  font-weight: 400;
+}
+@media (max-width: 991px) {
+  .mietViewPage .CVmiddleContent ul li span {
+    color: rgb(2, 2, 2);
+  }
+}
+.mietViewPage .collegeViewBtn {
+  width: 100%;
+}
+.mietViewPage .collegeViewBtn .call1 {
+  background-color: var(--primary-color);
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
 }
 .mietViewPage .CollegeViewtabConent {
   margin: 20px 0;
@@ -2101,9 +2173,48 @@ button.accordion-button.border-0.bg-white {
   padding: 0 20px;
   font-size: 1.2rem;
 }
+.mietViewPage .address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.mietViewPage .address i {
+  border-radius: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.6rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+}
+.mietViewPage .address p {
+  padding: 15px;
+}
 .mietViewPage .tabLinks {
   margin: 30px 0;
   margin-bottom: 0;
+}
+.mietViewPage .tabLinks .innerTabs {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.mietViewPage .tabLinks .innerTabs #myTab {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.mietViewPage .tabLinks .innerTabs #myTab li {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
 }
 .mietViewPage .tabLinks button {
   font-size: 1.4rem;

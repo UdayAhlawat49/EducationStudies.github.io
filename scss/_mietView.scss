@@ -2,16 +2,29 @@
 .mietViewPage {
 
   margin-top: 30px;
+  @media #{$tab}{
+    padding: 15px;
+    margin-top: 50px;
+  }
   .collegeViewImage {
     display: block;
     width: 100%;
     height: 150px;
     padding: 10px;
     border: 1px solid rgba(0, 0, 0, 0.123);
+    @media #{$tab}{
+      padding:0;
+      border-radius: 10px;
+    }
     img {
       object-fit: cover;
       width: 100%;
       height: 100%;
+      @media #{$tab}{
+        padding:0;
+        border-radius: 10px;
+
+      }
     }
   }
   .collgeViewHeading {
@@ -27,55 +40,103 @@
     background-color: white;
     margin: -15px;
 
+    @media #{$tab}{
+      padding: 0;
+      margin: 10px 0 0;
+      position: static;
+      box-shadow: none;
+      border: none;
+    
+    }
     .collegeViewMainHead {
       display: flex;
       align-items: center;
       .collegeLogo {
         margin: 0 10px;
+        @media #{$tab}{
+          display: none;
+        }
       }
       .subheading {
         h2 {
-          font-size: 5rem;
-          font-weight: 600;
-          line-height: 50px;
+          // font-size: 5rem;
+          // font-weight: 600;
+          // line-height: 50px;
+          text-transform: capitalize;
         }
         p {
-          font-size: 1rem;
-          letter-spacing: 1.2px;
-          font-weight: 400;
+          @media #{$tab}{
+            display: none;
+          }
         }
+        
       }
     }
   }
 
   .CVmiddleContent {
     color: black;
-    padding: 0 30px;
+    padding: 0;
     ul {
       display: flex;
       justify-content: start;
+      @media #{$tab}{
+        flex-direction: column;
+      }
       li {
         margin: 0 10px;
+       .term{
+        display: flex;
+        align-items: center;
+       }
+       .rating{
+        span{
+         
+          &:first-child{
+            border: 1px solid rgba(0, 0, 0, 0.116);
+            padding: 4px;
+            border-radius: 5px;
+            background-color: #E8E3E8;
+            margin: 0 ;
+          }
+             
+          &:last-child{
+          color: black;
+          font-weight: 600;
+          }
+        }
+       }
+        @media #{$tab}{
+          margin: 1px 5px;
+          font-size: 1rem;
+          font-weight: 100;
+        }
+        .rating{
+          color: rgb(255, 110, 0);
+        }
         span {
           font-size: 1.2rem;
-          font-weight: 600;
+          margin: 0 5px;
+          font-weight: 400;
+          @media #{$tab}{
+            color:  rgb(2, 2, 2);
+          }
         }
       }
     }
   }
 
   .collegeViewBtn {
-    display: flex;
-
-    .call {
-      span {
-        padding: 10px 15px;
-        background-color: #f37921;
-        margin: 5px;
-        color: white;
-        font-weight: 600;
-        font-size: 16px;
-      }
+   
+    width: 100%;
+    .call1 {
+      background-color: var(--primary-color);
+      padding: 10px;
+       margin-top: 10px;
+      width: 100%;
+      font-size: 1.4rem;
+       text-align: center;
+      
     }
   }
 
@@ -247,9 +308,41 @@
       }
   }
 
+  .address{
+    display: flex;
+   
+ 
+    i{
+       
+        border-radius: 5px;
+        align-items: center;
+        font-size: 2.6rem;
+        justify-content: center;
+        display: flex;
+        color: black;
+      
+         
+    } 
+    p{
+      padding: 15px;
+
+    }
+  }
   .tabLinks{
     margin: 30px 0;
     margin-bottom: 0;
+   .innerTabs{
+    overflow-x: auto;
+    overflow-y: hidden;
+    #myTab{
+    
+      height: max-content;
+      width: max-content;
+      li{
+        height: max-content;
+      }
+    }
+   }
     button{
         font-size: 1.4rem;
     }
