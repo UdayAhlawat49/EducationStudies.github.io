@@ -125,12 +125,12 @@ h4 {
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   letter-spacing: 0;
 }
 
 h6 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   letter-spacing: 0.15px;
 }
 
@@ -757,7 +757,7 @@ button:hover {
   .navigation {
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 8;
     background-color: white;
     width: 100%;
     left: 0;
@@ -1401,25 +1401,33 @@ button.accordion-button.border-0.bg-white {
   z-index: 3;
 }
 .heroSection .collgeHeading {
-  padding: 50px 0;
+  padding: 50px 0 0px;
   color: white;
   position: relative;
   z-index: 1;
   text-align: center;
 }
 .heroSection .collgeHeading .collegeMainHead {
-  border: 1px solid white;
   display: inline-block;
+  color: black;
+  border: 1px solid black;
   padding: 20px 50px;
-  background-color: rgba(0, 0, 0, 0.582);
+}
+@media (max-width: 991px) {
+  .heroSection .collgeHeading .collegeMainHead {
+    border: none;
+    text-align: left;
+    padding: 0 30px;
+    padding-bottom: 0;
+  }
 }
 .heroSection .collgeHeading .collegeMainHead h2 {
   font-size: 28px;
   line-height: 50px;
 }
 .heroSection .collgeHeading .collegeMainHead .subheading {
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 2.6rem;
+  font-weight: 600;
 }
 
 .middleContent {
@@ -1477,22 +1485,33 @@ button.accordion-button.border-0.bg-white {
 }
 .collegeView .collegeData .collegeRead span {
   margin: 10px;
-  font-size: 14px;
-  font-weight: 600;
   display: block;
   background: blue;
-  padding: 7px 35px;
+  /* padding: 7px 17px; */
   display: inline-block;
-  color: white;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
 }
 .collegeView .collegeData .collegeRead p {
   font-weight: 400;
   text-transform: uppercase;
   border: 1px solid;
-  padding: 5px;
+  padding: 2px;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
   color: black;
 }
-.collegeView .collegeData .collegeRead p a {
+.collegeView .collegeData .collegeRead a {
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 1px solid;
+  padding: 5px;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
   color: black;
 }
 .collegeView .collegeData .collegeLogo {
@@ -1509,10 +1528,11 @@ button.accordion-button.border-0.bg-white {
 .collegeView .collegeData .collegeLogo img {
   border: 1.5px solid rgba(0, 0, 0, 0.507);
 }
-.collegeView .collegeData .collegeLogo h2 {
+.collegeView .collegeData .collegeLogo h5 {
   margin: 0 5px;
-  font-size: 16px;
-  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .collegeView .collegeData .collegeText {
   display: -webkit-box;
@@ -1527,7 +1547,6 @@ button.accordion-button.border-0.bg-white {
 .collegeView .collegeData .collegeText ul li span {
   font-size: 12px;
   color: black;
-  font-weight: 300;
 }
 .collegeView .collegeData .collegeText h2 {
   font-size: 16px;
@@ -1567,12 +1586,87 @@ button.accordion-button.border-0.bg-white {
 }
 .collegeView .collegeData .collegeText .CollegebottomContent li span {
   font-size: 12px;
-  font-weight: 300;
   margin-right: 9px;
 }
 
+.blog_right_sidebar .list li {
+  padding: 5px 10px;
+  margin: 10px;
+  display: inline-block;
+  background: #eee;
+  border-radius: 10px;
+}
+.blog_right_sidebar .list li a {
+  font-weight: 600;
+}
+.blog_right_sidebar .list li a p {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
 .blog_right_sidebar a {
-  color: black;
+  color: rgba(0, 0, 0, 0.37);
+}
+
+.widget_title {
+  font-size: 1.6rem;
+  margin: 30px 0;
+}
+
+.media.post_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 26px 2px;
+}
+.media.post_item .media-body {
+  margin-left: 10px;
+}
+
+.search_widget input {
+  height: 50px;
+}
+.search_widget input::-webkit-input-placeholder {
+  font-size: 1.6rem;
+}
+.search_widget input::-moz-placeholder {
+  font-size: 1.6rem;
+}
+.search_widget input:-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+.search_widget input::-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+.search_widget input::placeholder {
+  font-size: 1.6rem;
+}
+
+.instagram_feeds ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.newsletter_widget input {
+  height: 50px;
+}
+.newsletter_widget input::-webkit-input-placeholder {
+  font-size: 1.6rem;
+}
+.newsletter_widget input::-moz-placeholder {
+  font-size: 1.6rem;
+}
+.newsletter_widget input:-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+.newsletter_widget input::-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+.newsletter_widget input::placeholder {
+  font-size: 1.6rem;
 }
 
 .collegeViewPage {
@@ -1978,6 +2072,7 @@ button.accordion-button.border-0.bg-white {
   color: rgb(255, 110, 0);
 }
 .mietViewPage .CVmiddleContent ul li span {
+  color: black;
   font-size: 1.2rem;
   margin: 0 5px;
   font-weight: 400;

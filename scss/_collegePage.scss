@@ -8,7 +8,7 @@
         z-index: 3;
     }
     .collgeHeading{
-        padding: 50px 0;
+        padding: 50px 0 0px;
         color: white;
         position: relative;
         z-index: 1;
@@ -16,18 +16,25 @@
    
      
         .collegeMainHead{
-            border: 1px solid white;
             display: inline-block;
+            color: black;
+            border: 1px solid black;
             padding: 20px 50px;
-            background-color: rgba(0, 0, 0, 0.582) ;
+            @media #{$tab}{
+                border: none;
+                text-align: left;
+                padding:0 30px;
+                padding-bottom: 0;
+            }
+            
             h2{
                 font-size: 28px;
                 line-height: 50px;
                
             }
             .subheading{
-                font-size: 20px;
-                font-weight: 300;
+                font-size: 2.6rem;
+                font-weight: 600;
         }
         }
     
@@ -84,25 +91,36 @@
             align-items: center;
                 span{
                     margin: 10px;
-                    font-size: 14px;
-                    font-weight: 600;
-                    display: block;
-                    background: blue;
-                    padding: 7px 35px;
-                    display: inline-block;
-                    color: white;
-                    // margin-right: 19px;
+    display: block;
+    background: blue;
+    /* padding: 7px 17px; */
+    display: inline-block;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
                 }
                p{
                  font-weight: 400;
                 text-transform: uppercase;
                  border: 1px solid;
-                padding:5px;
+                padding:2px;
+                text-align: center;
+                width: 100%;
+                font-size: 1.2rem;
                 color: black;
+            }
                 a{
+                    font-weight: 400;
+                    text-transform: uppercase;
+                     border: 1px solid;
+                    padding:5px;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    width: 100%;
                     color: black;
                 }
-               }
+              
         }
         .collegeLogo{
             display: flex;
@@ -111,10 +129,11 @@
             img{
                 border: 1.5px solid rgba(0, 0, 0, 0.507);
             }
-            h2{
+            h5{
                 margin: 0 5px;
-                font-size: 16px;
-                font-weight: 400;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
             }
         }
         .collegeText {
@@ -126,7 +145,7 @@
                 span{
                     font-size: 12px;
                     color: black;
-                    font-weight: 300;
+              
                 }
             }
            }
@@ -156,7 +175,7 @@
                     margin: 5px 0;
                     span{
                         font-size: 12px;
-                        font-weight: 300;
+                       
                         margin-right: 9px;
                     }
                 }
@@ -167,7 +186,59 @@
 }
 
 .blog_right_sidebar{
+    .list{
+   
+        li{
+            padding: 5px 10px;
+            margin: 10px;
+            display: inline-block;
+            background: #eee;
+            border-radius: 10px;
+                a{
+                    font-weight: 600;
+                    p{
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                    }
+                }
+        }
+    }
     a{
-        color: black;
+        color: rgba(0, 0, 0, 0.37); 
+      
+    }
+}
+.widget_title{
+    font-size: 1.6rem;
+    margin: 30px 0;
+}
+.media.post_item {
+    display: flex;
+    margin: 26px 2px;
+    .media-body {
+        margin-left: 10px;
+    }
+}
+.search_widget{
+    input{
+        height: 50px;
+        &::placeholder{
+            font-size: 1.6rem;
+        }
+    }
+}
+.instagram_feeds{
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.newsletter_widget{
+    input{
+        height: 50px;
+        &::placeholder{
+            font-size: 1.6rem;
+        }
     }
 }
